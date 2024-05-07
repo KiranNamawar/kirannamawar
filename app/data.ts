@@ -28,6 +28,7 @@ export function getRecentProjects() {
                         links: 1,
                         summary: 1,
                         hero_img: 1,
+                        skills: { name: 1, logo_url: 1}
                     },
                 },
             )
