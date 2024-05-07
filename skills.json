@@ -1,0 +1,602 @@
+[
+    {
+        "name": "HTML",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+        "category": "Frontend",
+        "tags": ["Frontend", "HTML", "Markup Language"],
+        "sub_skills": [
+            "Semantic HTML",
+            "HTML Forms",
+            "HTML Tables",
+            "HTML Media",
+            "HTML SVG",
+            "Accessibility",
+            "SEO"
+        ],
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "category": "Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+            },
+            {
+                "name": "HTML5 and CSS Fundamentals",
+                "category": "Course",
+                "url": "https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals"
+            },
+            {
+                "name": "Codecademy Learn HTML",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/learn-html"
+            },
+            {
+                "name": "web.dev Learn HTML",
+                "category": "Course",
+                "url": "https://web.dev/learn/html/"
+            }
+        ]
+    },
+    {
+        "name": "CSS",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        "category": "Frontend",
+        "tags": ["Frontend", "CSS", "Styling"],
+        "sub_skills": [
+            "CSS Selectors",
+            "CSS Box Model",
+            "Flexbox",
+            "Grid",
+            "CSS Animations",
+            "CSS Transitions",
+            "Responsive Design",
+            "Media Queries",
+            "Accessibility"
+        ],
+        "resources": [
+            {
+                "name": "MDN CSS Guide",
+                "category": "Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS"
+            },
+            {
+                "name": "HTML5 and CSS Fundamentals",
+                "category": "Course",
+                "url": "https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals"
+            },
+            {
+                "name": "Codecademy Learn CSS",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/learn-css"
+            },
+            {
+                "name": "web.dev Learn CSS",
+                "category": "Course",
+                "url": "https://web.dev/learn/css/"
+            },
+            {
+                "name": "CSS Tricks",
+                "category": "Tutorial",
+                "url": "https://css-tricks.com/"
+            }
+        ]
+    },
+    {
+        "name": "JavaScript",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+        "category": "Frontend",
+        "tags": ["Frontend", "JavaScript", "Programming Language"],
+        "sub_skills": [
+            "JavaScript Syntax",
+            "Variables",
+            "JavaScript Operators",
+            "Functions",
+            "Objects",
+            "Arrays",
+            "Loops",
+            "Conditionals",
+            "Error Handling",
+            "JavaScript Scope",
+            "Events",
+            "DOM Manipulation",
+            "ES6",
+            "Closure",
+            "Async/Await"
+        ],
+        "resources": [
+            {
+                "name": "MDN JavaScript Guide",
+                "category": "Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {
+                "name": "W3Cx: JavaScript Introduction",
+                "category": "Course",
+                "url": "https://www.edx.org/learn/javascript/the-world-wide-web-consortium-w3c-javascript-introduction"
+            },
+            {
+                "name": "Codecademy Learn JavaScript",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/introduction-to-javascript"
+            },
+            {
+                "name": "web.dev Learn JavaScript",
+                "category": "Course",
+                "url": "https://web.dev/learn/javascript/"
+            },
+            {
+                "name": "JavaScript.info",
+                "category": "Tutorial",
+                "url": "https://javascript.info/"
+            }
+        ]
+    },
+    {
+        "name": "TypeScript",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+        "category": "Frontend",
+        "tags": ["Frontend", "TypeScript", "Programming Language"],
+        "sub_skills": [
+            "TypeScript Syntax",
+            "Data Type",
+            "Functions Type",
+            "Type Aliases",
+            "Interfaces",
+            "Generics",
+            "Enums",
+            "Narrowing",
+            "Union"        ],
+        "resources": [
+            {
+                "name": "TypeScript Documentation",
+                "category": "Documentation",
+                "url": "https://www.typescriptlang.org/docs/"
+            },
+            {
+                "name": "TypeScript Handbook",
+                "category": "Tutorial",
+                "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+            }
+        ]
+    },
+    {
+        "name": "React",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "category": "Frontend",
+        "tags": ["Frontend", "React", "Library"],
+        "sub_skills": [
+            "React Components",
+            "JSX",
+            "Props",
+            "Hooks",
+            "Conditional Rendering",
+            "Pure Funnctions",
+            "useState",
+            "useEffect",
+            "useReducer",
+            "useContext",
+            "Event Handlers",
+            "Spread Operator",
+            "Object Destructuring",
+            "Arry Destructuring",
+            "Lifting State Up",
+            "Sharing State between Components",
+            "Preserving and Reseting State",
+            "useRef"
+        ],
+        "resources": [
+            {
+                "name": "React Documentation",
+                "category": "Documentation",
+                "url": "https://react.dev/references/react"
+            },
+            {
+                "name": "Learn React",
+                "category": "Tutorial",
+                "url": "https://react.dev/learn"
+            },
+            {
+                "name": "Codecademy Learn React",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/react-101"
+            }
+        ]
+    },
+    {
+        "name": "Git",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+        "category": "Version Control",
+        "tags": ["Version Control", "Git", "Tool"],
+        "sub_skills": [
+            "Git Basics",
+            "Git Branches",
+            "Merging",
+            "Rebasing",
+            "Stashing",
+            "Cherry-Picking",
+            "Reset",
+            "Revert",
+            "Tagging",
+            "Git Hooks",
+            "Git Workflows",
+            "Git Collaboration"
+                ],
+        "resources": [
+            {
+                "name": "Git Documentation",
+                "category": "Documentation",
+                "url": "https://git-scm.com/doc"
+            },
+            {
+                "name": "Learn Git",
+                "category": "Tutorial",
+                "url": "https://git-scm.com/doc"
+            },
+            {
+                "name": "Codecademy Learn Git",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/learn-git"
+            }
+        ]
+    },
+    {
+        "name": "GitHub",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+        "category": "Version Control",
+        "tags": ["Version Control", "GitHub", "Tool"],
+        "sub_skills": [
+            "GitHub Repositories",
+            "GitHub Branches",
+            "Pull Requests",
+            "GitHub Issues",
+            "GitHub Actions",
+            "GitHub Pages",
+            "Gists",
+            "GitHub Security"
+                ],
+        "resources": [
+            {
+                "name": "GitHub Documentation",
+                "category": "Documentation",
+                "url": "https://docs.github.com/en"
+            },
+            {
+                "name": "Learn GitHub",
+                "category": "Tutorial",
+                "url": "https://docs.github.com/en/github/getting-started-with-github"
+            },
+            {
+                "name": "GitHub Learning Lab",
+                "category": "Course",
+                "url": "https://lab.github.com/"
+            }
+        ]
+    },
+    {
+        "name": "Node.js",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        "category": "Backend",
+        "tags": ["Backend", "Node.js", "Runtime Environment"],
+        "sub_skills": [
+            "Node.js Basics",
+            "Modules",
+            "Error Handling",
+            "HTTP Module",
+            "NPM",
+            "File System Module",
+            "Events",
+            "Performance",
+            "Security"
+                ],
+        "resources": [
+            {
+                "name": "Node.js Documentation",
+                "category": "Documentation",
+                "url": "https://nodejs.org/en/docs/"
+            },
+            {
+                "name": "Learn Node.js",
+                "category": "Tutorial",
+                "url": "https://nodejs.dev/learn"
+            },
+            {
+                "name": "Codecademy Learn Node.js",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/learn-node-js"
+            }
+        ]
+    },
+    {
+        "name": "MongoDB",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        "category": "Database",
+        "tags": ["Backend", "MongoDB", "Database"],
+        "sub_skills": [
+            "MongoDB Basics",
+            "CRUD Operations",
+            "Aggregation",
+            "Indexes",
+            "Data Modeling",
+            "Transactions",
+            "MongoDB Best Practices"
+        ],
+        "resources": [
+            {
+                "name": "MongoDB Documentation",
+                "category": "Documentation",
+                "url": "https://docs.mongodb.com/manual/"
+            },
+            {
+                "name": "Learn MongoDB",
+                "category": "Tutorial",
+                "url": "https://university.mongodb.com/"
+            },
+            {
+                "name": "Codecademy Learn MongoDB",
+                "category": "Course",
+                "url": "https://www.codecademy.com/learn/learn-mongodb"
+            }
+        ]
+    },
+    {
+        "name": "Next.js",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        "category": "Framework",
+        "tags": ["Framework", "Next.js", "Library"],
+        "sub_skills": [
+            "Next.js Basics",
+            "Routing",
+            "Data Fetching",
+            "Image Optimization",
+            "Fonts Optimization",
+            "Server-Side Rendering"
+                ],
+        "resources": [
+            {
+                "name": "Next.js Documentation",
+                "category": "Documentation",
+                "url": "https://nextjs.org/docs"
+            },
+            {
+                "name": "Learn Next.js",
+                "category": "Tutorial",
+                "url": "https://nextjs.org/learn"
+            }
+        ]
+    },
+    {
+        "name": "Ubuntu",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg",
+        "category": "Operating System",
+        "tags": ["Operating System", "Ubuntu", "Linux"],
+        "sub_skills": [
+            "Ubuntu Basics",
+            "Terminal Commands",
+            "File System",
+            "Users and Groups",
+            "Permissions",
+            "Networking",
+            "Processes",
+            "Package Management",
+            "Security"
+                ],
+        "resources": [
+            {
+                "name": "Ubuntu Documentation",
+                "category": "Documentation",
+                "url": "https://ubuntu.com/server/docs"
+            },
+            {
+                "name": "Ubuntu Tutorials",
+                "category": "Tutorial",
+                "url": "https://ubuntu.com/tutorials"
+            }
+        ]
+    },
+    {
+        "name": "Tailwind CSS",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        "category": "Frontend",
+        "tags": ["Frontend", "Tailwind CSS", "Framework"],
+        "sub_skills": [
+            "Tailwind CSS Basics",
+            "Utility-First",
+            "Responsive Design",
+            "Customization",
+            "Dark Mode",
+            "JIT Mode"
+                ],
+        "resources": [
+            {
+                "name": "Tailwind CSS Documentation",
+                "category": "Documentation",
+                "url": "https://tailwindcss.com/docs"
+            }
+        ]
+    },
+    {
+        "name": "GraphQL",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-original.svg",
+        "category": "Backend",
+        "tags": ["Backend", "GraphQL", "API"],
+        "sub_skills": [
+            "GraphQL Basics",
+            "Schema",
+            "Queries",
+            "Mutations",
+            "Subscriptions",
+            "Resolvers",
+            "Directives",
+            "Federation",
+            "Performance"
+                ],
+        "resources": [
+            {
+                "name": "GraphQL Documentation",
+                "category": "Documentation",
+                "url": "https://graphql.org/learn/"
+            },
+            {
+                "name": "How To GraphQL",
+                "Category": "Tutorial",
+                "url": "https://www.howtographql.com"
+            },
+            {
+                "name": "Apollo GraphQL",
+                "Category": "Documentation",
+                "url": "https://www.apollographql.com/docs/"
+            },
+            {
+                "name": "Apollo Odyssey",
+                "Category": "Tutorial",
+                "url": "https://apollographql.com/tutorials"
+            }
+        ]
+    },
+    {
+        "name": "Azure",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
+        "category": "Cloud",
+        "tags": ["Cloud", "Azure", "Service"],
+        "sub_skills": [
+            "Azure Basics",
+            "Resource Groups",
+            "Satic Web Apps",
+            "App Services",
+            "Virtual Machines",
+            "Azure Blob Storage",
+            "Cosmos DB",
+            "Azure Database",
+            "Serverless Functions",
+            "Virtual Network",
+            "Private Endpoints"
+        ],
+        "resources": [
+            {
+                "name": "Azure Documentation",
+                "category": "Documentation",
+                "url": "https://docs.microsoft.com/en-us/azure/"
+            }
+        ]
+    },
+    {
+        "name": "AWS",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        "category": "Cloud",
+        "tags": ["Cloud", "AWS", "Service"],
+        "sub_skills": [
+            "AWS Basics",
+            "Amplify",
+            "S3",
+            "EC2",
+            "RDS",
+            "Lambda",
+            "API Gateway",
+            "CloudFront",
+            "IAM",
+            "Route 53",
+            "CloudFormation"
+        ],
+        "resources": [
+            {
+                "name": "AWS Documentation",
+                "category": "Documentation",
+                "url": "https://docs.aws.amazon.com/index.html"
+            }
+        ]
+    },
+    {
+        "name": "DigitalOcean",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original-wordmark.svg",
+        "category": "Cloud",
+        "tags": ["Cloud", "DigitalOcean", "Service"],
+        "sub_skills": [
+            "DigitalOcean Basics",
+            "Droplets",
+            "App Platform",
+            "Databases",
+            "Spaces",
+            "Load Balancers",
+            "Monitoring",
+            "Networking",
+            "Security",
+            "Marketplace"
+        ],
+        "resources": [
+            {
+                "name": "DigitalOcean Documentation",
+                "category": "Documentation",
+                "url": "https://www.digitalocean.com/docs/"
+            }
+        ]
+    },
+    {
+        "name": "Figma",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+        "category": "Design",
+        "tags": ["Design", "Figma", "Tool"],
+        "sub_skills": [
+            "Figma Basics",
+            "Design System",
+            "Prototyping",
+            "Collaboration",
+            "Plugins",
+            "Vector Networks",
+            "Auto Layout",
+            "Interactive Components",
+            "Variants"
+        ],
+        "resources": [
+            {
+                "name": "Figma Documentation",
+                "category": "Documentation",
+                "url": "https://www.figma.com/learn/"
+            },
+            {
+                "name": "Figma Community",
+                "category": "Resource",
+                "url": "https://www.figma.com/community"
+            }
+        ]
+    },
+    {
+        "name": "Inkscape",
+        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/inkscape/inkscape-original-wordmark.svg",
+        "category": "Design",
+        "tags": ["Design", "Inkscape", "Tool"],
+        "sub_skills": [
+            "Inkscape Basics",
+            "Vector Graphics",
+            "Paths",
+            "Shapes",
+            "Text",
+            "Clones",
+            "Patterns",
+            "Gradients",
+            "Filters",
+            "Layers",
+            "Grouping",
+            "Alignment",
+            "Distribute",
+            "Transformations",
+            "Z-Order",
+            "Boolean Operations",
+            "Path Effects",
+            "Extensions",
+            "Bitmap Tracing",
+            "Color Management",
+            "File Formats"
+        ],
+        "resources": [
+            {
+                "name": "Inkscape Documentation",
+                "category": "Documentation",
+                "url": "https://inkscape.org/doc/"
+            },
+            {
+                "name": "Inkscape Tutorials",
+                "category": "Tutorial",
+                "url": "https://inkscape.org/learn/tutorials/"
+            }
+        ]
+    }
+]
