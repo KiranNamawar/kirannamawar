@@ -1,3 +1,5 @@
+'use server'
+
 import { client } from '@/app/util/connection';
 
 export async function getProjects() {

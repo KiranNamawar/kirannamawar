@@ -1,3 +1,5 @@
+'use server'
+
 import { client } from './util/connection';
 
 // Step 1: Create a cache object
