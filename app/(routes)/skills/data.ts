@@ -7,7 +7,5 @@ export async function getSkills() {
         return await collection.find().toArray();
     } catch (error) {
         console.log(error);
-    } finally {
-       await client.close();
     }
 }

@@ -7,7 +7,5 @@ export async function getProject(projectName: string) {
         return await collection.findOne({ name: projectName });
     } catch (error) {
         console.log(error);
-    } finally {
-        await client.close();
-    }   
+    } 
 }

@@ -7,7 +7,5 @@ export async function getSkill(skillName: string) {
         return await collection.findOne({ name: skillName });
     } catch (error) {
         console.log(error);
-    } finally {
-        await client.close();
-    }   
+    }  
 }

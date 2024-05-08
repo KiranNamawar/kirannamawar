@@ -31,45 +31,41 @@ export async function getSkillBadges() {
 
     } catch (error) {
         console.error(error);
-    } finally {
-        await client.close();
     }
 }
 
-// export async function getRecentProjects() {
-//     try {
-//         if (cache.recentProjects) {
-//             return cache.recentProjects;
-//         }
+export async function getRecentProjects() {
+    try {
+        if (cache.recentProjects) {
+            return cache.recentProjects;
+        }
 
-//         await client.connect();
+        await client.connect();
 
-//         const collection = client.db('portfolio').collection('projects');
+        const collection = client.db('portfolio').collection('projects');
 
-//         const result = await collection
-//             .find(
-//                 {},
-//                 {
-//                     projection: {
-//                         name: 1,
-//                         date: 1,
-//                         links: 1,
-//                         summary: 1,
-//                         hero_img: 1,
-//                         skills: { name: 1, logo_url: 1 },
-//                     },
-//                 },
-//             )
-//             .toArray();
+        const result = await collection
+            .find(
+                {},
+                {
+                    projection: {
+                        name: 1,
+                        date: 1,
+                        links: 1,
+                        summary: 1,
+                        hero_img: 1,
+                        skills: { name: 1, logo_url: 1 },
+                    },
+                },
+            )
+            .toArray();
 
-//         cache.recentProjects = result;
+        cache.recentProjects = result;
 
-//         return result;
+        return result;
 
-//     } catch (error) {
-//         console.error(error);
-//     } finally {
-//         await client.close();
-//     }
-// }
+    } catch (error) {
+        console.error(error);
+    }
+}
 

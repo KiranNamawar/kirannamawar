@@ -21,7 +21,5 @@ export async function getProjects() {
             .toArray();
     } catch (error) {
         console.log(error);
-    } finally {
-        await client.close();
     }
 }
