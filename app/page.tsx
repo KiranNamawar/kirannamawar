@@ -2,6 +2,7 @@ import { SkillBadge } from './components/skill-badge';
 
 import { getSkillBadges } from './data';
 
+export const revalidate = 86400;
 
 export default async function Home() {
     const skills = await getSkillBadges();

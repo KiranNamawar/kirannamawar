@@ -1,4 +1,3 @@
-'use server'
 
 import { client } from '@/app/util/connection';
 
