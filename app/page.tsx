@@ -1,11 +1,18 @@
 import { SkillBadge } from './components/skill-badge';
-
 import { getSkillBadges } from './data';
 
 export const revalidate = 86400;
 
-export default async function Home() {
-    const skills = await getSkillBadges();
+export async function getStaticProps() {
+    return {
+        props: {
+            skills: await getSkillBadges(),
+        },
+        revalidate
+    };
+}
+
+export default async function Home({ skills }: { skills: {_id: string; name: string; logo_url: string}[] }) {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
