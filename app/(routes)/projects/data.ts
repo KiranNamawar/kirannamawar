@@ -1,10 +1,10 @@
-import { client } from '../util/connection';
+import { client } from '@/app/util/connection';
 
-export function getProjects() {
+export async function getProjects() {
     try {
-        client.connect();
+        await client.connect();
         const collection = client.db('portfolio').collection('projects');
-        return collection
+        return await collection
             .find(
                 {},
                 {
@@ -22,6 +22,6 @@ export function getProjects() {
     } catch (error) {
         console.log(error);
     } finally {
-        client.close();
+        await client.close();
     }
 }

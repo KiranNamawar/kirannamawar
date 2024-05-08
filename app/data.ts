@@ -1,24 +1,52 @@
 import { client } from './util/connection';
 
-export function getSkillLogos() {
+// Step 1: Create a cache object
+// Step 1: Create a cache object
+const cache = {
+    skillBadges: null as any[] | null,
+    recentProjects: null as any[] | null,
+};
+
+export async function getSkillBadges() {
     try {
-        client.connect();
+        // Step 2: Check if the data is already in the cache
+        if (cache.skillBadges) {
+            console.log('Data is in the cache');
+            // Step 3: If the data is in the cache, return it
+            return cache.skillBadges;
+        }
+
+        await client.connect();
+
         const collection = client.db('portfolio').collection('skills');
-        return collection
-            .find({}, { projection: { name: 1, logo_Url: 1 } })
+        console.log('Data is not in the cache');
+        // Step 4: If the data is not in the cache, make the request, store the result in the cache, and then return the result
+        const result = await collection
+            .find({}, { projection: { name: 1, logo_url: 1 } })
             .toArray();
+
+        cache.skillBadges = result;
+
+        return result;
+
     } catch (error) {
         console.error(error);
     } finally {
-        client.close();
+        await client.close();
     }
 }
 
-export function getRecentProjects() {
+export async function getRecentProjects() {
     try {
-        client.connect();
+        if (cache.recentProjects) {
+            return cache.recentProjects;
+        }
+
+        await client.connect();
+
         const collection = client.db('portfolio').collection('projects');
-        return collection
+
+        const result = await collection
             .find(
                 {},
                 {
@@ -28,16 +56,20 @@ export function getRecentProjects() {
                         links: 1,
                         summary: 1,
                         hero_img: 1,
-                        skills: { name: 1, logo_url: 1}
+                        skills: { name: 1, logo_url: 1 },
                     },
                 },
             )
-            .sort({ date: -1 })
-            .limit(5)
             .toArray();
+
+        cache.recentProjects = result;
+
+        return result;
+
     } catch (error) {
         console.error(error);
     } finally {
-        client.close();
+        await client.close();
     }
 }
+
