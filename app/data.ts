@@ -5,7 +5,7 @@ import { client } from './util/connection';
 // Step 1: Create a cache object
 const cache = {
     skillBadges: null as any[] | null,
-    recentProjects: null as any[] | null,
+    // recentProjects: null as any[] | null,
 };
 
 export async function getSkillBadges() {
@@ -23,7 +23,7 @@ export async function getSkillBadges() {
         console.log('Data is not in the cache');
         // Step 4: If the data is not in the cache, make the request, store the result in the cache, and then return the result
         const result = await collection
-            .find({}, { projection: { name: 1, logo_url: 1 } })
+            .find({}, { projection: { name: 1, logo: 1 } })
             .toArray();
 
         cache.skillBadges = result;
@@ -35,38 +35,38 @@ export async function getSkillBadges() {
     }
 }
 
-export async function getRecentProjects() {
-    try {
-        if (cache.recentProjects) {
-            return cache.recentProjects;
-        }
+// export async function getRecentProjects() {
+//     try {
+//         if (cache.recentProjects) {
+//             return cache.recentProjects;
+//         }
 
-        await client.connect();
+//         await client.connect();
 
-        const collection = client.db('portfolio').collection('projects');
+//         const collection = client.db('portfolio').collection('projects');
 
-        const result = await collection
-            .find(
-                {},
-                {
-                    projection: {
-                        name: 1,
-                        date: 1,
-                        links: 1,
-                        summary: 1,
-                        hero_img: 1,
-                        skills: { name: 1, logo_url: 1 },
-                    },
-                },
-            )
-            .toArray();
+//         const result = await collection
+//             .find(
+//                 {},
+//                 {
+//                     projection: {
+//                         name: 1,
+//                         date: 1,
+//                         links: 1,
+//                         summary: 1,
+//                         hero_img: 1,
+//                         skills: { name: 1, logo_url: 1 },
+//                     },
+//                 },
+//             )
+//             .toArray();
 
-        cache.recentProjects = result;
+//         cache.recentProjects = result;
 
-        return result;
+//         return result;
 
-    } catch (error) {
-        console.error(error);
-    }
-}
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
 

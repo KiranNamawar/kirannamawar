@@ -1,601 +1,549 @@
 [
     {
+        "_id": "html",
         "name": "HTML",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
         "category": "Frontend",
-        "tags": ["Frontend", "HTML", "Markup Language"],
-        "sub_skills": [
-            "Semantic HTML",
-            "HTML Forms",
-            "HTML Tables",
-            "HTML Media",
-            "HTML SVG",
-            "Accessibility",
-            "SEO"
+        "tags": ["html", "web", "frontend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202310,
+                "subSkills": ["Semantic HTML", "Hyperlinks", "Accessibility", "HTML Media", "Responsive Images", "SVG", "HTML Table"],
+                "resources": [
+                    {
+                        "name": "Structuring the Web with HTML",
+                        "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+                    },
+                    {
+                        "name": "Learn HTML | Codecademy",
+                        "url": "https://www.codecademy.com/learn/learn-html"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "MDN HTML Guide",
-                "category": "Tutorial",
-                "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
-            },
-            {
-                "name": "HTML5 and CSS Fundamentals",
-                "category": "Course",
-                "url": "https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals"
-            },
-            {
-                "name": "Codecademy Learn HTML",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/learn-html"
-            },
-            {
-                "name": "web.dev Learn HTML",
-                "category": "Course",
-                "url": "https://web.dev/learn/html/"
+                "name": "HTML: HyperText Markup Language | MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             }
         ]
     },
     {
+        "_id": "css",
         "name": "CSS",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
         "category": "Frontend",
-        "tags": ["Frontend", "CSS", "Styling"],
-        "sub_skills": [
-            "CSS Selectors",
-            "CSS Box Model",
-            "Flexbox",
-            "Grid",
-            "CSS Animations",
-            "CSS Transitions",
-            "Responsive Design",
-            "Media Queries",
-            "Accessibility"
+        "tags": ["css", "web", "frontend", "styling", "design"],
+        "subSkillsByDate": [
+            { 
+                "date": 202311,
+                "subSkills": ["CSS Basics", "CSS Selectors", "Cascade and Specificity", "Box Model", "CSS Layout", "Responsive Design"],
+                "resources": [
+                    {
+                        "name": "Learn to Style HTML Using CSS",
+                        "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS"
+                    },
+                    {
+                        "name": "Learn CSS | Codecademy",
+                        "url": "https://www.codecademy.com/learn/learn-css"
+                    },
+                    {
+                        "name": "W3Cx: HTML5 and CSS Fundamentals",
+                        "url": "https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals"
+                    }
+                    
+                ]
+            },
+            {
+                "date": 202312,
+                "subSkills": ["Flexbox", "Grid", "CSS Variables"],
+                "resources": [
+                    {
+                        "name": "CSS Grid and Flexbox for Responsive Web Design | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/css-grid-flexbox-v2/"
+                    },
+                    {
+                        "name": "A Complete Guide to Flexbox | CSS Tricks",
+                        "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                    },
+                    {
+                        "name": "A Complete Guide to Grid | CSS Tricks",
+                        "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+                    }
+                ]
+            },
+            {
+                "date": 202401,
+                "subSkills": ["CSS Animation", "CSS Transitions", "CSS Transform"],
+                "resources": [
+                    {
+                        "name": "CSS Animation and Transition | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/css-animation-transition/"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "MDN CSS Guide",
-                "category": "Tutorial",
-                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS"
-            },
-            {
-                "name": "HTML5 and CSS Fundamentals",
-                "category": "Course",
-                "url": "https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals"
-            },
-            {
-                "name": "Codecademy Learn CSS",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/learn-css"
-            },
-            {
-                "name": "web.dev Learn CSS",
-                "category": "Course",
-                "url": "https://web.dev/learn/css/"
+                "name": "Cascading Style Sheets | MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
             },
             {
                 "name": "CSS Tricks",
-                "category": "Tutorial",
                 "url": "https://css-tricks.com/"
             }
         ]
     },
     {
+        "_id": "javascript",
         "name": "JavaScript",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-        "category": "Frontend",
-        "tags": ["Frontend", "JavaScript", "Programming Language"],
-        "sub_skills": [
-            "JavaScript Syntax",
-            "Variables",
-            "JavaScript Operators",
-            "Functions",
-            "Objects",
-            "Arrays",
-            "Loops",
-            "Conditionals",
-            "Error Handling",
-            "JavaScript Scope",
-            "Events",
-            "DOM Manipulation",
-            "ES6",
-            "Closure",
-            "Async/Await"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+        "category": "Programming Language",
+        "tags": ["javascript", "web", "frontend", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202312,
+                "subSkills": ["JavaScript Basics", "JavaScript Functions", "JavaScript Objects", "JavaScript Arrays", "JavaScript Loops", "JavaScript DOM", "JavaScript Events", "JavaScript AJAX", "JavaScript ES6"],
+                "resources": [
+                    {
+                        "name": "JavaScript- Dynamic client-side scripting",
+                        "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+                    },
+                    {
+                        "name": "Learn JavaScript | Codecademy",
+                        "url": "https://www.codecademy.com/learn/introduction-to-javascript"
+                    },
+                    {
+                        "name": "JavaScript: From First Steps to Professional | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/javascript-first-steps/"
+                    }
+                ]
+            },
+            {
+                "date": 202401,
+                "subSkills": ["JavaScript Promises", "JavaScript Async/Await", "JavaScript Modules", "JavaScript Classes", "JavaScript Error Handling"],
+                "resources": [
+                    {
+                        "name": "JavaScript 2022 | PluralSight",
+                        "url": "https://www.pluralsight.com/paths/javascript-2022"
+                    }
+                ]
+            },
+            {
+                "date": 202402,
+                "subSkills": [ "Web APIs", "HTML5 Multimedia and Javascript APIs", "Fetch API", "DOM Manupulation" ],
+                "resources": [
+                    {
+                        "name": "W3Cx: JavaScript Introduction",
+                        "url": "https://www.edx.org/learn/javascript/the-world-wide-web-consortium-w3c-javascript-introduction"
+                    },
+                    {
+                        "name": "JavaScript and the DOM | MDN",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"
+                    }
+                ]
+            },
+            {
+                "date": 202403,
+                "subSkills": ["Thread of Execution", "Execution Context", "Call Stack", "Higher Order Functions", "Arrow Functions", "Closures", "Asynchronicity in JavaScript", "Callback Queue and Event Loop" ],
+                "resources": [
+                    {
+                        "name": "JavaScript: The Hard Parts | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/javascript-hard-parts/"
+                    }
+                ]
+            },
+            {
+                "date": 202404,
+                "subSkills": ["Implicit Coercion", "Double Equals vs Triple Equals", "Strict Mode", "Scope", "Hoisting", "this Keyword", "Prototypal Inheritance", "IIFE", "new Keyword", "JavaScript Prototype and Inheritance", "Destructuring", "Spread Operator", "Generator Function" ],
+                "resources": [
+                    {
+                        "name": "Deep JavaScript Foundations | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/deep-javascript-v3/"
+                    },
+                    {
+                        "name": "JavaScript: The Recent Parts | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/js-recent-parts/"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "MDN JavaScript Guide",
-                "category": "Tutorial",
-                "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+                "name": "JavaScript Guide | MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
             },
             {
-                "name": "W3Cx: JavaScript Introduction",
-                "category": "Course",
-                "url": "https://www.edx.org/learn/javascript/the-world-wide-web-consortium-w3c-javascript-introduction"
-            },
-            {
-                "name": "Codecademy Learn JavaScript",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/introduction-to-javascript"
-            },
-            {
-                "name": "web.dev Learn JavaScript",
-                "category": "Course",
-                "url": "https://web.dev/learn/javascript/"
-            },
-            {
-                "name": "JavaScript.info",
-                "category": "Tutorial",
+                "name": "The Modern JavaScript Tutorial",
                 "url": "https://javascript.info/"
+            }
+        ]
+
+    },
+    {
+        "_id": "git",
+        "name": "Git",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+        "category": "Version Control",
+        "tags": ["git", "version control", "collaboration"],
+        "subSkillsByDate": [
+            { 
+                "date": 202312,
+                "subSkills": ["Git Basics", "Git Branching", "Git Merging"],
+                "resources": [
+                    {
+                        "name": "Learn Git | Codecademy",
+                        "url": "https://www.codecademy.com/learn/learn-git"
+                    }
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "Git Handbook",
+                "url": "https://guides.github.com/introduction/git-handbook/"
+            },
+            {
+                "name": "Git Documentation",
+                "url": "https://git-scm.com/doc"
             }
         ]
     },
     {
+        "_id": "typescript",
         "name": "TypeScript",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-        "category": "Frontend",
-        "tags": ["Frontend", "TypeScript", "Programming Language"],
-        "sub_skills": [
-            "TypeScript Syntax",
-            "Data Type",
-            "Functions Type",
-            "Type Aliases",
-            "Interfaces",
-            "Generics",
-            "Enums",
-            "Narrowing",
-            "Union"        ],
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+        "category": "Programming Language",
+        "tags": ["typescript", "javascript", "web", "frontend", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202403,
+                "subSkills": ["TypeScript Basics", "Interface", "Object and Property Types", "Union and Intersection Types", "Type Alias", "Function and Return Types" ],
+                "resources": [
+                    {
+                        "name": "TypeScript Fundamentals | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/typescript-v4/"
+                    }
+                ]
+            }
+        ],
         "resources": [
             {
-                "name": "TypeScript Documentation",
-                "category": "Documentation",
-                "url": "https://www.typescriptlang.org/docs/"
-            },
-            {
                 "name": "TypeScript Handbook",
-                "category": "Tutorial",
                 "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
             }
         ]
     },
     {
+        "_id": "react",
         "name": "React",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
         "category": "Frontend",
-        "tags": ["Frontend", "React", "Library"],
-        "sub_skills": [
-            "React Components",
-            "JSX",
-            "Props",
-            "Hooks",
-            "Conditional Rendering",
-            "Pure Funnctions",
-            "useState",
-            "useEffect",
-            "useReducer",
-            "useContext",
-            "Event Handlers",
-            "Spread Operator",
-            "Object Destructuring",
-            "Arry Destructuring",
-            "Lifting State Up",
-            "Sharing State between Components",
-            "Preserving and Reseting State",
-            "useRef"
+        "tags": ["react", "javascript", "web", "frontend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202403,
+                "subSkills": ["React Basics", "JSX", "Components", "Props", "State", "Hooks"],
+                "resources": [
+                    {
+                        "name": "Learn React | Codecademy",
+                        "url": "https://www.codecademy.com/learn/react-101"
+                    }
+                ]
+            },
+            {
+                "date": 202404,
+                "subSkills": ["Conditional Rendering", "Lists and Keys", "Pure Functions", "Event Handlers", "Lifting State Up", "Reducer", "Context", "Refs", "Effects", "Effect Lifecycle", "Custom Hooks", "React Best Practices"],
+                "resources": [
+                    {
+                        "name": "React Docs",
+                        "url": "https://react.dev/learn"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "React Documentation",
-                "category": "Documentation",
-                "url": "https://react.dev/references/react"
-            },
-            {
-                "name": "Learn React",
-                "category": "Tutorial",
-                "url": "https://react.dev/learn"
-            },
-            {
-                "name": "Codecademy Learn React",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/react-101"
+                "name": "React Reference",
+                "url": "https://react.dev/reference/react"
             }
         ]
     },
     {
-        "name": "Git",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-        "category": "Version Control",
-        "tags": ["Version Control", "Git", "Tool"],
-        "sub_skills": [
-            "Git Basics",
-            "Git Branches",
-            "Merging",
-            "Rebasing",
-            "Stashing",
-            "Cherry-Picking",
-            "Reset",
-            "Revert",
-            "Tagging",
-            "Git Hooks",
-            "Git Workflows",
-            "Git Collaboration"
-                ],
-        "resources": [
-            {
-                "name": "Git Documentation",
-                "category": "Documentation",
-                "url": "https://git-scm.com/doc"
-            },
-            {
-                "name": "Learn Git",
-                "category": "Tutorial",
-                "url": "https://git-scm.com/doc"
-            },
-            {
-                "name": "Codecademy Learn Git",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/learn-git"
-            }
-        ]
-    },
-    {
-        "name": "GitHub",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-        "category": "Version Control",
-        "tags": ["Version Control", "GitHub", "Tool"],
-        "sub_skills": [
-            "GitHub Repositories",
-            "GitHub Branches",
-            "Pull Requests",
-            "GitHub Issues",
-            "GitHub Actions",
-            "GitHub Pages",
-            "Gists",
-            "GitHub Security"
-                ],
-        "resources": [
-            {
-                "name": "GitHub Documentation",
-                "category": "Documentation",
-                "url": "https://docs.github.com/en"
-            },
-            {
-                "name": "Learn GitHub",
-                "category": "Tutorial",
-                "url": "https://docs.github.com/en/github/getting-started-with-github"
-            },
-            {
-                "name": "GitHub Learning Lab",
-                "category": "Course",
-                "url": "https://lab.github.com/"
-            }
-        ]
-    },
-    {
-        "name": "Node.js",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-        "category": "Backend",
-        "tags": ["Backend", "Node.js", "Runtime Environment"],
-        "sub_skills": [
-            "Node.js Basics",
-            "Modules",
-            "Error Handling",
-            "HTTP Module",
-            "NPM",
-            "File System Module",
-            "Events",
-            "Performance",
-            "Security"
-                ],
-        "resources": [
-            {
-                "name": "Node.js Documentation",
-                "category": "Documentation",
-                "url": "https://nodejs.org/en/docs/"
-            },
-            {
-                "name": "Learn Node.js",
-                "category": "Tutorial",
-                "url": "https://nodejs.dev/learn"
-            },
-            {
-                "name": "Codecademy Learn Node.js",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/learn-node-js"
-            }
-        ]
-    },
-    {
-        "name": "MongoDB",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-        "category": "Database",
-        "tags": ["Backend", "MongoDB", "Database"],
-        "sub_skills": [
-            "MongoDB Basics",
-            "CRUD Operations",
-            "Aggregation",
-            "Indexes",
-            "Data Modeling",
-            "Transactions",
-            "MongoDB Best Practices"
-        ],
-        "resources": [
-            {
-                "name": "MongoDB Documentation",
-                "category": "Documentation",
-                "url": "https://docs.mongodb.com/manual/"
-            },
-            {
-                "name": "Learn MongoDB",
-                "category": "Tutorial",
-                "url": "https://university.mongodb.com/"
-            },
-            {
-                "name": "Codecademy Learn MongoDB",
-                "category": "Course",
-                "url": "https://www.codecademy.com/learn/learn-mongodb"
-            }
-        ]
-    },
-    {
-        "name": "Next.js",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-        "category": "Framework",
-        "tags": ["Framework", "Next.js", "Library"],
-        "sub_skills": [
-            "Next.js Basics",
-            "Routing",
-            "Data Fetching",
-            "Image Optimization",
-            "Fonts Optimization",
-            "Server-Side Rendering"
-                ],
-        "resources": [
-            {
-                "name": "Next.js Documentation",
-                "category": "Documentation",
-                "url": "https://nextjs.org/docs"
-            },
-            {
-                "name": "Learn Next.js",
-                "category": "Tutorial",
-                "url": "https://nextjs.org/learn"
-            }
-        ]
-    },
-    {
-        "name": "Ubuntu",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg",
-        "category": "Operating System",
-        "tags": ["Operating System", "Ubuntu", "Linux"],
-        "sub_skills": [
-            "Ubuntu Basics",
-            "Terminal Commands",
-            "File System",
-            "Users and Groups",
-            "Permissions",
-            "Networking",
-            "Processes",
-            "Package Management",
-            "Security"
-                ],
-        "resources": [
-            {
-                "name": "Ubuntu Documentation",
-                "category": "Documentation",
-                "url": "https://ubuntu.com/server/docs"
-            },
-            {
-                "name": "Ubuntu Tutorials",
-                "category": "Tutorial",
-                "url": "https://ubuntu.com/tutorials"
-            }
-        ]
-    },
-    {
+        "_id": "tailwindcss",
         "name": "Tailwind CSS",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
         "category": "Frontend",
-        "tags": ["Frontend", "Tailwind CSS", "Framework"],
-        "sub_skills": [
-            "Tailwind CSS Basics",
-            "Utility-First",
-            "Responsive Design",
-            "Customization",
-            "Dark Mode",
-            "JIT Mode"
-                ],
+        "tags": ["tailwindcss", "css", "web", "frontend", "design"],
+        "subSkillsByDate": [
+            { 
+                "date": 202403,
+                "subSkills": ["Tailwind CSS Basics", "Utility-First CSS", "Responsive Design", "Customizing Tailwind CSS"],
+                "resources": [
+                    {
+                        "name": "Tailwind CSS | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/tailwind-css/"
+                    }
+                ]
+            }
+        ],
         "resources": [
             {
-                "name": "Tailwind CSS Documentation",
-                "category": "Documentation",
+                "name": "Tailwind CSS Docs",
                 "url": "https://tailwindcss.com/docs"
             }
         ]
     },
     {
-        "name": "GraphQL",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-original.svg",
+        "_id": "figma",
+        "name": "Figma",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+        "category": "Design",
+        "tags": ["figma", "design", "ui", "ux"],
+        "subSkillsByDate": [
+            { 
+                "date": 202403,
+                "subSkills": ["Figma Basics", "Figma Components", "Figma Prototyping", "Figma Collaboration"],
+                "resources": [
+                    {
+                        "name": "Figma for Developers | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/figma/"
+                    }
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "Figma Learn",
+                "url": "https://help.figma.com/"
+            },
+            {
+                "name": "Figma Community",
+                "url": "https://www.figma.com/community/"
+            }
+        ]
+    },
+    {
+        "_id": "nodejs",
+        "name": "Node.js",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
         "category": "Backend",
-        "tags": ["Backend", "GraphQL", "API"],
-        "sub_skills": [
-            "GraphQL Basics",
-            "Schema",
-            "Queries",
-            "Mutations",
-            "Subscriptions",
-            "Resolvers",
-            "Directives",
-            "Federation",
-            "Performance"
-                ],
+        "tags": ["nodejs", "javascript", "web", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202401,
+                "subSkills": ["Node.js Basics", "Node.js Modules", "Node.js HTTP Module", "Node.js NPM"],
+                "resources": [
+                    {
+                        "name": "Node.js Getting Started | PluralSight",
+                        "url": "https://www.pluralsight.com/courses/nodejs-getting-started"
+                    }
+                ]
+            },
+            {
+                "date": 202403,
+                "subSkills": ["Node.js Environment", "Importing and Exporting Modules", "HTTP Server"],
+                "resources": [
+                    {
+                        "name": "Introduction to Node.js | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/node-js-v3/"
+                    }
+                ]
+            },
+            {
+                "date": 202404,
+                "subSkills": [ "Events", "Streams", "File System", "HTTP Request and Response", "Error Handling", "Asynchronicity in Node.js", "Event loops and Queues"],
+                "resources": [
+                    {
+                        "name": "The Hard Parts of Servers & Node.js | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/servers-node-js/"
+                    }
+                ]
+            }
+        ],
         "resources": [
             {
-                "name": "GraphQL Documentation",
-                "category": "Documentation",
+                "name": "Node.js Docs",
+                "url": "https://nodejs.dev/learn"
+            }
+        ]
+    },
+    {
+        "_id": "linux",
+        "name": "Linux",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+        "category": "Operating System",
+        "tags": ["linux", "os", "command line", "backend", "ubuntu"],
+        "subSkillsByDate": [
+            { 
+                "date": 202402,
+                "subSkills": ["Linux Basics", "Linux File System", "Linux Permissions", "Linux Processes", "Linux Package Management", "Linux Networking", "SSH", "Bash Scripting"],
+                "resources": [
+                    {
+                        "name": "Complete Intro to Linux and Command Line | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/linux-command-line/"
+                    },
+                    {
+                        "name": "Full Stack for Front-End Engineers | Frontend Masters",
+                        "url": "https://frontendmasters.com/courses/fullstack-v3/"
+                    }
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "Ubuntu Documentation",
+                "url": "https://help.ubuntu.com/"
+            }
+        ]
+    },
+    {
+        "_id": "mongodb",
+        "name": "MongoDB",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        "category": "Database",
+        "tags": ["mongodb", "database", "nosql", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202404,
+                "subSkills": ["MongoDB Basics", "CRUD Operations", "Aggregation", "Indexing", "Transactions", "Data Modeling"],
+                "resources": [
+                    {
+                        "name": "MongoDB Node.js Developer Path | MongoDB University",
+                        "url": "https://learn.mongodb.com/learning-paths/mongodb-nodejs-developer-path"
+                    }
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "MongoDB Docs",
+                "url": "https://docs.mongodb.com/"
+            }
+        ]
+    },
+    {
+        "_id": "nextjs",
+        "name": "Next.js",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        "category": "Framework",
+        "tags": ["nextjs", "react", "javascript", "web", "frontend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202404,
+                "subSkills": ["Next.js Basics", "Pages", "Routing", "Data Fetching", "API Routes", "Font Optimization", "Image Optimization", "Static File Serving", "Dynamic Routes", "Head Element", "Metadata", "CSS Modules", "Environment Variables", "Deployment"],
+                "resources": [
+                    {
+                        "name": "Learn Next.js | Next.js",
+                        "url": "https://nextjs.org/learn"
+                    }
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "Next.js Docs",
+                "url": "https://nextjs.org/docs"
+            }
+        ]
+    },
+    {
+        "_id": "graphql",
+        "name": "GraphQL",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+        "category": "API",
+        "tags": ["graphql", "api", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202403,
+                "subSkills": ["GraphQL Basics", "GraphQL Schema", "GraphQL Query", "GraphQL Mutation", "GraphQL Subscription", "GraphQL Resolver"],
+                "resources": [
+                    {
+                        "name": "How to GraphQL",
+                        "url": "https://www.howtographql.com/"
+                    }
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "GraphQL Docs",
                 "url": "https://graphql.org/learn/"
-            },
-            {
-                "name": "How To GraphQL",
-                "Category": "Tutorial",
-                "url": "https://www.howtographql.com"
-            },
-            {
-                "name": "Apollo GraphQL",
-                "Category": "Documentation",
-                "url": "https://www.apollographql.com/docs/"
-            },
-            {
-                "name": "Apollo Odyssey",
-                "Category": "Tutorial",
-                "url": "https://apollographql.com/tutorials"
             }
         ]
     },
     {
-        "name": "Azure",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
-        "category": "Cloud",
-        "tags": ["Cloud", "Azure", "Service"],
-        "sub_skills": [
-            "Azure Basics",
-            "Resource Groups",
-            "Satic Web Apps",
-            "App Services",
-            "Virtual Machines",
-            "Azure Blob Storage",
-            "Cosmos DB",
-            "Azure Database",
-            "Serverless Functions",
-            "Virtual Network",
-            "Private Endpoints"
-        ],
-        "resources": [
-            {
-                "name": "Azure Documentation",
-                "category": "Documentation",
-                "url": "https://docs.microsoft.com/en-us/azure/"
-            }
-        ]
-    },
-    {
-        "name": "AWS",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-        "category": "Cloud",
-        "tags": ["Cloud", "AWS", "Service"],
-        "sub_skills": [
-            "AWS Basics",
-            "Amplify",
-            "S3",
-            "EC2",
-            "RDS",
-            "Lambda",
-            "API Gateway",
-            "CloudFront",
-            "IAM",
-            "Route 53",
-            "CloudFormation"
-        ],
-        "resources": [
-            {
-                "name": "AWS Documentation",
-                "category": "Documentation",
-                "url": "https://docs.aws.amazon.com/index.html"
-            }
-        ]
-    },
-    {
+        "_id": "digitalocean",
         "name": "DigitalOcean",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original-wordmark.svg",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
         "category": "Cloud",
-        "tags": ["Cloud", "DigitalOcean", "Service"],
-        "sub_skills": [
-            "DigitalOcean Basics",
-            "Droplets",
-            "App Platform",
-            "Databases",
-            "Spaces",
-            "Load Balancers",
-            "Monitoring",
-            "Networking",
-            "Security",
-            "Marketplace"
+        "tags": ["digitalocean", "cloud", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202403,
+                "subSkills": ["DigitalOcean Basics", "Droplets", "Spaces", "Databases", "Load Balancers", "Networking", "Monitoring", "Security"],
+                "resources": [
+                    {
+                        "name": "DigitalOcean Tutorials",
+                        "url": "https://www.digitalocean.com/community/tutorials"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "DigitalOcean Documentation",
-                "category": "Documentation",
+                "name": "DigitalOcean Docs",
                 "url": "https://www.digitalocean.com/docs/"
             }
         ]
     },
     {
-        "name": "Figma",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-        "category": "Design",
-        "tags": ["Design", "Figma", "Tool"],
-        "sub_skills": [
-            "Figma Basics",
-            "Design System",
-            "Prototyping",
-            "Collaboration",
-            "Plugins",
-            "Vector Networks",
-            "Auto Layout",
-            "Interactive Components",
-            "Variants"
+        "_id": "azure",
+        "name": "Azure",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
+        "category": "Cloud",
+        "tags": ["azure", "cloud", "backend"],
+        "subSkillsByDate": [
+            { 
+                "date": 202404,
+                "subSkills": ["Azure Basics", "Azure Services", "Azure CLI", "Azure Portal", "Azure Resource Manager", "Azure Storage", "Virtual Machines", "App Service", "Azure Functions", "Cosmos DB", "Networking", "VPC", "Private Endpoints"],
+                "resources": [
+                    {
+                        "name": "Azure Free Services | Microsoft Azure",
+                        "url": "https://azure.microsoft.com/en-in/pricing/free-services/"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "Figma Documentation",
-                "category": "Documentation",
-                "url": "https://www.figma.com/learn/"
-            },
-            {
-                "name": "Figma Community",
-                "category": "Resource",
-                "url": "https://www.figma.com/community"
+                "name": "Azure Docs",
+                "url": "https://docs.microsoft.com/en-us/azure/"
             }
         ]
     },
     {
-        "name": "Inkscape",
-        "logo_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/inkscape/inkscape-original-wordmark.svg",
-        "category": "Design",
-        "tags": ["Design", "Inkscape", "Tool"],
-        "sub_skills": [
-            "Inkscape Basics",
-            "Vector Graphics",
-            "Paths",
-            "Shapes",
-            "Text",
-            "Clones",
-            "Patterns",
-            "Gradients",
-            "Filters",
-            "Layers",
-            "Grouping",
-            "Alignment",
-            "Distribute",
-            "Transformations",
-            "Z-Order",
-            "Boolean Operations",
-            "Path Effects",
-            "Extensions",
-            "Bitmap Tracing",
-            "Color Management",
-            "File Formats"
+        "_id": "aws",
+        "name": "AWS",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        "category": "Cloud",
+        "tags": ["aws", "cloud", "backend"],
+        "subSkillsByDate": [
+            {
+                "date": 202403,
+                "subSkills": ["AWS Basics", "IAM", "EC2", "S3", "RDS", "Lambda", "API Gateway", "Route 53", "VPC"],
+                "resources": [
+                    {
+                        "name": "AWS Free Tier | Amazon Web Services",
+                        "url": "https://aws.amazon.com/free/"
+                    }
+                ]
+            }
         ],
         "resources": [
             {
-                "name": "Inkscape Documentation",
-                "category": "Documentation",
-                "url": "https://inkscape.org/doc/"
-            },
-            {
-                "name": "Inkscape Tutorials",
-                "category": "Tutorial",
-                "url": "https://inkscape.org/learn/tutorials/"
+                "name": "AWS Docs",
+                "url": "https://docs.aws.amazon.com/"
             }
         ]
     }

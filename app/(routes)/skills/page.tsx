@@ -1,5 +1,6 @@
 import { getSkills } from './data';
-import { SkillCard } from '@/app/components/skill-card';
+import { Skill, SkillCard } from '@/app/components/skill-card';
+
 
 export default async function Page() {
     const skills = await getSkills();
@@ -9,15 +10,8 @@ export default async function Page() {
             <div>
                 {skills && skills.map((skill) => (
                     <SkillCard
-                        key={skill._id.toString()}
-                        skill={{
-                            name: skill.name,
-                            category: skill.category,
-                            logo_url: skill.logo_url,
-                            tags: skill.tags,
-                            sub_skills: skill.sub_skills,
-                            resources: skill.resources
-                        }}
+                        key={skill._id}
+                        skill={skill as Skill}
                     />
                 ))}
             </div>

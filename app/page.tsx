@@ -19,11 +19,8 @@ export default async function Home() {
                 {skills &&
                     skills.map((skill) => (
                         <SkillBadge
-                            key={skill._id.toString()}
-                            skill={{
-                                name: skill.name,
-                                logo_url: skill.logo_url,
-                            }}
+                            key={skill._id}
+                            skill={skill}
                         />
                     ))}
                 </div>
