@@ -1,0 +1,543 @@
+[
+    {
+        "_id": "html-202310",
+        "date": 202310,
+        "skillId": "html",
+        "skillName": "HTML",
+        "subSkills": [
+            "Semantic HTML",
+            "Hyperlinks",
+            "Accessibility",
+            "HTML Media",
+            "Responsive Images",
+            "SVG",
+            "HTML Table"
+        ],
+        "resources": [
+            {
+                "name": "Structuring the Web with HTML",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+            },
+            {
+                "name": "Learn HTML | Codecademy",
+                "url": "https://www.codecademy.com/learn/learn-html"
+            }
+        ]
+    },
+    {
+        "_id": "css-202311",
+        "date": 202311,
+        "skillId": "css",
+        "skillName": "CSS",
+        "subSkills": [
+            "CSS Basics",
+            "CSS Selectors",
+            "Cascade and Specificity",
+            "Box Model",
+            "CSS Layout",
+            "Responsive Design"
+        ],
+        "resources": [
+            {
+                "name": "Learn to Style HTML Using CSS",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS"
+            },
+            {
+                "name": "Learn CSS | Codecademy",
+                "url": "https://www.codecademy.com/learn/learn-css"
+            },
+            {
+                "name": "W3Cx: HTML5 and CSS Fundamentals",
+                "url": "https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals"
+            }
+        ]
+    },
+    {
+        "_id": "css-202312",
+        "skillId": "css",
+        "skillName": "CSS",
+        "date": 202312,
+        "subSkills": ["Flexbox", "Grid", "CSS Variables"],
+        "resources": [
+            {
+                "name": "CSS Grid and Flexbox for Responsive Web Design | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/css-grid-flexbox-v2/"
+            },
+            {
+                "name": "A Complete Guide to Flexbox | CSS Tricks",
+                "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            },
+            {
+                "name": "A Complete Guide to Grid | CSS Tricks",
+                "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+            }
+        ]
+    },
+    {
+        "_id": "css-202401",
+        "skillId": "css",
+        "skillName": "CSS",
+        "date": 202401,
+        "subSkills": ["CSS Animation", "CSS Transitions", "CSS Transform"],
+        "resources": [
+            {
+                "name": "CSS Animation and Transition | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/css-animation-transition/"
+            }
+        ]
+    },
+    {
+        "_id": "javascript-202312",
+        "skillId": "javascript",
+        "skillName": "JavaScript",
+        "date": 202312,
+        "subSkills": [
+            "JavaScript Basics",
+            "JavaScript Functions",
+            "JavaScript Objects",
+            "JavaScript Arrays",
+            "JavaScript Loops",
+            "JavaScript DOM",
+            "JavaScript Events",
+            "JavaScript AJAX",
+            "JavaScript ES6"
+        ],
+        "resources": [
+            {
+                "name": "JavaScript- Dynamic client-side scripting",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {
+                "name": "Learn JavaScript | Codecademy",
+                "url": "https://www.codecademy.com/learn/introduction-to-javascript"
+            },
+            {
+                "name": "JavaScript: From First Steps to Professional | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/javascript-first-steps/"
+            }
+        ]
+    },
+    {
+        "_id": "javascript-202401",
+        "skillId": "javascript",
+        "skillName": "JavaScript",
+        "date": 202401,
+        "subSkills": [
+            "JavaScript Promises",
+            "JavaScript Async/Await",
+            "JavaScript Modules",
+            "JavaScript Classes",
+            "JavaScript Error Handling"
+        ],
+        "resources": [
+            {
+                "name": "JavaScript 2022 | PluralSight",
+                "url": "https://www.pluralsight.com/paths/javascript-2022"
+            }
+        ]
+    },
+    {
+        "_id": "javascript-202402",
+        "skillId": "javascript",
+        "skillName": "JavaScript",
+        "date": 202402,
+        "subSkills": [
+            "Web APIs",
+            "HTML5 Multimedia and Javascript APIs",
+            "Fetch API",
+            "DOM Manupulation"
+        ],
+        "resources": [
+            {
+                "name": "W3Cx: JavaScript Introduction",
+                "url": "https://www.edx.org/learn/javascript/the-world-wide-web-consortium-w3c-javascript-introduction"
+            },
+            {
+                "name": "JavaScript and the DOM | MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"
+            }
+        ]
+    },
+    {
+        "_id": "javascript-202403",
+        "skillId": "javascript",
+        "skillName": "JavaScript",
+        "date": 202403,
+        "subSkills": [
+            "Thread of Execution",
+            "Execution Context",
+            "Call Stack",
+            "Higher Order Functions",
+            "Arrow Functions",
+            "Closures",
+            "Asynchronicity in JavaScript",
+            "Callback Queue and Event Loop"
+        ],
+        "resources": [
+            {
+                "name": "JavaScript: The Hard Parts | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/javascript-hard-parts/"
+            }
+        ]
+    },
+    {
+        "_id": "javascript-202404",
+        "skillId": "javascript",
+        "skillName": "JavaScript",
+        "date": 202404,
+        "subSkills": [
+            "Implicit Coercion",
+            "Double Equals vs Triple Equals",
+            "Strict Mode",
+            "Scope",
+            "Hoisting",
+            "this Keyword",
+            "Prototypal Inheritance",
+            "IIFE",
+            "new Keyword",
+            "JavaScript Prototype and Inheritance",
+            "Destructuring",
+            "Spread Operator",
+            "Generator Function"
+        ],
+        "resources": [
+            {
+                "name": "Deep JavaScript Foundations | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/deep-javascript-v3/"
+            },
+            {
+                "name": "JavaScript: The Recent Parts | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/js-recent-parts/"
+            }
+        ]
+    },
+    {
+        "_id": "git-202312",
+        "skillId": "git",
+        "skillName": "Git",
+        "date": 202312,
+        "subSkills": ["Git Basics", "Git Branching", "Git Merging"],
+        "resources": [
+            {
+                "name": "Learn Git | Codecademy",
+                "url": "https://www.codecademy.com/learn/learn-git"
+            }
+        ]
+    },
+    {
+        "_id": "typescript-202403",
+        "skillId": "typescript",
+        "skillName": "TypeScript",
+        "date": 202403,
+        "subSkills": [
+            "TypeScript Basics",
+            "Interface",
+            "Object and Property Types",
+            "Union and Intersection Types",
+            "Type Alias",
+            "Function and Return Types"
+        ],
+        "resources": [
+            {
+                "name": "TypeScript Fundamentals | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/typescript-v4/"
+            }
+        ]
+    },
+    {
+        "_id": "react-202403",
+        "skillId": "react",
+        "skillName": "React",
+        "date": 202403,
+        "subSkills": [
+            "React Basics",
+            "JSX",
+            "Components",
+            "Props",
+            "State",
+            "Hooks"
+        ],
+        "resources": [
+            {
+                "name": "Learn React | Codecademy",
+                "url": "https://www.codecademy.com/learn/react-101"
+            }
+        ]
+    },
+    {
+        "_id": "react-202404",
+        "skillId": "react",
+        "skillName": "React",
+        "date": 202404,
+        "subSkills": [
+            "Conditional Rendering",
+            "Lists and Keys",
+            "Pure Functions",
+            "Event Handlers",
+            "Lifting State Up",
+            "Reducer",
+            "Context",
+            "Refs",
+            "Effects",
+            "Effect Lifecycle",
+            "Custom Hooks",
+            "React Best Practices"
+        ],
+        "resources": [
+            {
+                "name": "React Docs",
+                "url": "https://react.dev/learn"
+            }
+        ]
+    },
+    {
+        "_id": "tailwindcss-202403",
+        "skillId": "tailwindcss",
+        "skillName": "Tailwind CSS",
+        "date": 202403,
+        "subSkills": [
+            "Tailwind CSS Basics",
+            "Utility-First CSS",
+            "Responsive Design",
+            "Customizing Tailwind CSS"
+        ],
+        "resources": [
+            {
+                "name": "Tailwind CSS | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/tailwind-css/"
+            }
+        ]
+    },
+    {
+        "_id": "figma-202403",
+        "skillId": "figma",
+        "skillName": "Figma",
+        "date": 202403,
+        "subSkills": [
+            "Figma Basics",
+            "Figma Components",
+            "Figma Prototyping",
+            "Figma Collaboration"
+        ],
+        "resources": [
+            {
+                "name": "Figma for Developers | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/figma/"
+            }
+        ]
+    },
+    {
+        "_id": "nodejs-202401",
+        "skillId": "nodejs",
+        "skillName": "Node.js",
+        "date": 202401,
+        "subSkills": [
+            "Node.js Basics",
+            "Node.js Modules",
+            "Node.js HTTP Module",
+            "Node.js NPM"
+        ],
+        "resources": [
+            {
+                "name": "Node.js Getting Started | PluralSight",
+                "url": "https://www.pluralsight.com/courses/nodejs-getting-started"
+            }
+        ]
+    },
+    {
+        "_id": "nodejs-202402",
+        "skillId": "nodejs",
+        "skillName": "Node.js",
+        "date": 202402,
+        "subSkills": [
+            "Node.js Environment",
+            "Importing and Exporting Modules",
+            "HTTP Server"
+        ],
+        "resources": [
+            {
+                "name": "Introduction to Node.js | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/node-js-v3/"
+            }
+        ]
+    },
+    {
+        "_id": "nodejs-202404",
+        "skillId": "nodejs",
+        "skillName": "Node.js",
+        "date": 202404,
+        "subSkills": [
+            "Events",
+            "Streams",
+            "File System",
+            "HTTP Request and Response",
+            "Error Handling",
+            "Asynchronicity in Node.js",
+            "Event loops and Queues"
+        ],
+        "resources": [
+            {
+                "name": "The Hard Parts of Servers & Node.js | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/servers-node-js/"
+            }
+        ]
+    },
+    {
+        "_id": "linux-202402",
+        "skillId": "linux",
+        "skillName": "Linux",
+        "date": 202402,
+        "subSkills": [
+            "Linux Basics",
+            "Linux File System",
+            "Linux Permissions",
+            "Linux Processes",
+            "Linux Package Management",
+            "Linux Networking",
+            "SSH",
+            "Bash Scripting"
+        ],
+        "resources": [
+            {
+                "name": "Complete Intro to Linux and Command Line | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/linux-command-line/"
+            },
+            {
+                "name": "Full Stack for Front-End Engineers | Frontend Masters",
+                "url": "https://frontendmasters.com/courses/fullstack-v3/"
+            }
+        ]
+    },
+    {
+        "_id": "mongodb-202404",
+        "skillId": "mongodb",
+        "skillName": "MongoDB",
+        "date": 202404,
+        "subSkills": [
+            "MongoDB Basics",
+            "CRUD Operations",
+            "Aggregation",
+            "Indexing",
+            "Transactions",
+            "Data Modeling"
+        ],
+        "resources": [
+            {
+                "name": "MongoDB Node.js Developer Path | MongoDB University",
+                "url": "https://learn.mongodb.com/learning-paths/mongodb-nodejs-developer-path"
+            }
+        ]
+    },
+    {
+        "_id": "nextjs-202404",
+        "skillId": "nextjs",
+        "skillName": "Next.js",
+        "date": 202404,
+        "subSkills": [
+            "Next.js Basics",
+            "Pages",
+            "Routing",
+            "Data Fetching",
+            "API Routes",
+            "Font Optimization",
+            "Image Optimization",
+            "Static File Serving",
+            "Dynamic Routes",
+            "Head Element",
+            "Metadata",
+            "CSS Modules",
+            "Environment Variables",
+            "Deployment"
+        ],
+        "resources": [
+            {
+                "name": "Learn Next.js | Next.js",
+                "url": "https://nextjs.org/learn"
+            }
+        ]
+    },
+    {
+        "_id": "graphql-202402",
+        "skillId": "graphql",
+        "skillName": "GraphQL",
+        "date": 202402,
+        "subSkills": [
+            "GraphQL Basics",
+            "GraphQL Schema",
+            "GraphQL Query",
+            "GraphQL Mutation",
+            "GraphQL Subscription",
+            "GraphQL Resolver"
+        ],
+        "resources": [
+            {
+                "name": "How to GraphQL",
+                "url": "https://www.howtographql.com/"
+            }
+        ]
+    },
+    {
+        "_id": "digitalocean-202403",
+        "skillId": "digitalocean",
+        "skillName": "DigitalOcean",
+        "date": 202403,
+        "subSkills": [
+            "DigitalOcean Basics",
+            "App Platform",
+            "Serverless Functions",
+            "Droplets",
+            "Spaces",
+            "Databases",
+            "Load Balancers",
+            "Networking",
+            "Monitoring",
+            "Security"
+        ],
+        "resources": [
+            {
+                "name": "DigitalOcean Tutorials",
+                "url": "https://www.digitalocean.com/community/tutorials"
+            }
+        ]
+    },
+    {
+        "_id": "azure-202404",
+        "skillId": "azure",
+        "skillName": "Azure",
+        "date": 202404,
+        "subSkills": [
+            "Azure Basics",
+            "Azure Services",
+            "Azure CLI",
+            "Azure Portal",
+            "Azure Resource Manager",
+            "Azure Storage",
+            "Virtual Machines",
+            "App Service",
+            "Azure Functions",
+            "Cosmos DB",
+            "Networking",
+            "VPC",
+            "Private Endpoints"
+        ],
+        "resources": [
+            {
+                "name": "Azure Free Services | Microsoft Azure",
+                "url": "https://azure.microsoft.com/en-in/pricing/free-services/"
+            }
+        ]
+    },
+    {
+        "_id": "aws-202402",
+        "skillId": "aws",
+        "skillName": "AWS",
+        "date": 202402,
+        "subSkills": ["AWS Basics", "IAM", "EC2", "S3", "RDS", "Lambda", "API Gateway", "Route 53", "VPC"],
+        "resources": [
+            {
+                "name": "AWS Free Tier | Amazon Web Services",
+                "url": "https://aws.amazon.com/free/"
+            }
+        ]
+    }
+]
