@@ -1,5 +1,6 @@
 import { SkillBadge } from './components/skill-badge';
 import { getSkillBadges } from './data';
+import { jetbrainsMono } from './util/fonts';
 
 
 export default async function Home() {
@@ -7,7 +8,7 @@ export default async function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-                <p className="text-center text-2xl font-bold ">
+                <p className={`text-center text-2xl font-bold ${jetbrainsMono.className}`}>
                     Welcome to My Portfolio! I&apos;m Kiran Namawar, a
                     self-taught web developer.
                 </p>
