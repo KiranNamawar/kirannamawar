@@ -1,24 +1,40 @@
 import { client } from '@/app/util/connection';
 
-export async function getSkills() {
+export async function getSubSkills() {
     try {
         await client.connect();
-        const collection = client.db('portfolio').collection('skills');
-        return await collection
-            .aggregate([
-                {
-                    $project: {
-                        _id: 1,
-                        name: 1,
-                        logo: 1,
-                        category: 1,
-                        subSkillsByDate: 1,
-                    },
-                },
-                { $unwind: '$subSkillsByDate' },
-                { $sort: { 'subSkillsByDate.date': -1 } },
-            ])
-            .toArray();
+        const subSkillsCollection = client.db('portfolio').collection('subSkills');
+        const result = await subSkillsCollection.aggregate([
+            {
+              '$group': {
+                '_id': '$date', 
+                'skills': {
+                  '$push': {
+                    'skillName': '$skillName', 
+                    'skillId': '$skillId', 
+                    'subSkills': '$subSkills'
+                  }
+                }
+              }
+            }, {
+              '$sort': {
+                '_id': -1
+              }
+            }
+          ]).toArray();
+        return result;
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export async function getSkillLogo(skillName: string) {
+    try {
+        await client.connect();
+        const skillsCollection = client.db('portfolio').collection('skills');
+        const result = await skillsCollection.findOne({ name: skillName }, { projection: { logo: 1 } });
+        return result;
     } catch (error) {
         console.log(error);
     }
