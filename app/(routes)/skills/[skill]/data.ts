@@ -1,6 +1,6 @@
 
 import { client } from '@/app/util/connection';
-export async function getSkill(skillId: string) {
+export async function getSkill(skillId: any) {
     try {
         await client.connect();
         const collection = client.db('portfolio').collection('skills');

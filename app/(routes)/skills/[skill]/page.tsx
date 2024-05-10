@@ -16,7 +16,7 @@ export default async function Page({ params }: { params: any }) {
                     <h2>Sub Skills</h2>
                     <ul>
                         {subSkills && subSkills.map((subSkill: any) => (
-                            <li key={subSkill._id} className="m-5">{subSkill.subSkills.map(s => (<p key={s}>{s}</p>))}</li>
+                            <li key={subSkill._id} className="m-5">{subSkill.subSkills.map((s: string) => (<p key={s}>{s}</p>))}</li>
                         ))}
                     </ul>
                 </>
