@@ -1,6 +1,13 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { nunito } from './util/fonts';
+import { Quicksand } from 'next/font/google';
+
+const quickSand = Quicksand({
+    subsets: ['latin'],
+    display: 'swap',
+    weight: ['300'],
+    variable: '--font-quicksand',
+});
 
 
 export const metadata: Metadata = {
@@ -15,7 +22,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={nunito.className}>{children}</body>
+            <body className={`${quickSand.variable}`}>{children}</body>
         </html>
     );
 }

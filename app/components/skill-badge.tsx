@@ -13,7 +13,7 @@ export function SkillBadge({ skill }: { skill: Skill }) {
     return (
         <Link href={skillUrl} className="flex flex-col">
             <Image src={skill.logo} alt={skill.name} width={50} height={50} />
-            <p>{skill.name}</p>
+            {/* <p>{skill.name}</p> */}
         </Link>
     )
 }
