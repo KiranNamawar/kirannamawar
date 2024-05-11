@@ -1,8 +1,6 @@
-import { SkillBadge } from './components';
-import { getSkillBadges } from './data';
+import { SkillBadges } from './util/components';
 
 export default async function Home() {
-    const skills = await getSkillBadges();
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <section className="flex items-center justify-between">
@@ -17,12 +15,7 @@ export default async function Home() {
                         Web Developer
                     </p>
                 </div>
-                <div className="m-5 grid grid-cols-4 gap-5">
-                    {skills &&
-                        skills.map((skill) => (
-                            <SkillBadge key={skill._id} skill={skill} />
-                        ))}
-                </div>
+                <SkillBadges />
             </section>
         </main>
     );

@@ -1,13 +1,23 @@
-import { DateCard } from './components';
-import { getSubSkills } from './data';
+import { getRecentSkills } from '@/app/util/data';
+import { formatedDate } from '@/app/util/functions';
+import { SkillCard } from '@/app/util/components';
 
 export default async function Page() {
-    const skills = await getSubSkills();
+    const recentSkills = await getRecentSkills();
     return (
         <>
             <h2>Skills</h2>
             <div>
-                {skills?.map((date) => <DateCard key={date._id} date={date} />)}
+                {recentSkills?.map((recentSkill) => (
+                    <div key={recentSkill._id}>
+                        <h3>{formatedDate(recentSkill._id)}</h3>
+                        <div>
+                            {recentSkill.skills.map((skill) => (
+                                <SkillCard key={skill.skillId} skill={skill} />
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
         </>
     );
