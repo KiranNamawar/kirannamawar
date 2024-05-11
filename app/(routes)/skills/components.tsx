@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { getSkillLogo } from '../(routes)/skills/data';
+import { getSkillLogo } from './data';
 
-export async function SkillCard({ skill }: { skill: any }) {
+async function SkillCard({ skill }: { skill: any }) {
     const logo = await getSkillLogo(skill.skillName);
     // console.log(logo);
     // console.log(skill);
@@ -14,6 +13,19 @@ export async function SkillCard({ skill }: { skill: any }) {
             {skill.subSkills.map((s: string) => (
                 <h3 key={s}>{s}</h3>
             ))}
+        </div>
+    );
+}
+
+export async function DateCard({ date }: { date: any }) {
+    return (
+        <div className='p-5 border-2'>
+            <h2>{date._id}</h2>
+            {
+                date.skills.map((skill: { skillId: any })=>(
+                    <SkillCard key={skill.skillId} skill={skill} />
+                ))
+            }
         </div>
     );
 }

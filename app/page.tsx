@@ -1,4 +1,4 @@
-import { SkillBadge } from './components/skill-badge';
+import { SkillBadge } from './components';
 import { getSkillBadges } from './data';
 
 export default async function Home() {
@@ -9,11 +9,11 @@ export default async function Home() {
                 <div>
                     <p className={`font-quickSand`}>
                         Hey, I&apos;m{' '}
-                        <span className="text-4xl tracking-widest text-blue-100">
+                        <span className="text-4xl text-gray-500 font-thin tracking-widest">
                             KIRAN NAMAWAR
                         </span>
                     </p>
-                    <p className="font-quickSand text-7xl font-thin text-blue-500">
+                    <p className="font-quickSand text-7xl font-thin text-blue-300">
                         Web Developer
                     </p>
                 </div>

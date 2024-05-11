@@ -1,4 +1,4 @@
-import { SkillList } from '@/app/components/skill-list';
+import { SkillList } from './components';
 import { getSkillNames } from './data';
 
 export default async function SkillLayout({

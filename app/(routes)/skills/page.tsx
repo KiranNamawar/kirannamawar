@@ -1,4 +1,4 @@
-import { DateCard } from '@/app/components/date-card';
+import { DateCard } from './components';
 import { getSubSkills } from './data';
 
 
