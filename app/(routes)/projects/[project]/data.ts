@@ -1,4 +1,3 @@
-
 import { client } from '@/app/util/connection';
 
 export async function getProject(projectName: string) {
@@ -8,5 +7,5 @@ export async function getProject(projectName: string) {
         return await collection.findOne({ name: projectName });
     } catch (error) {
         console.log(error);
-    } 
+    }
 }

@@ -6,7 +6,14 @@ async function SkillCard({ skill }: { skill: any }) {
 
     return (
         <div className="m-5 flex border-2">
-            {logo && <Image src={logo.logo} alt={logo._id.toString()} width={100} height={100} />}
+            {logo && (
+                <Image
+                    src={logo.logo}
+                    alt={logo._id.toString()}
+                    width={100}
+                    height={100}
+                />
+            )}
 
             <h2>{skill.skillName}</h2>
             {skill.subSkills.map((s: string) => (
@@ -18,13 +25,11 @@ async function SkillCard({ skill }: { skill: any }) {
 
 export async function DateCard({ date }: { date: any }) {
     return (
-        <div className='p-5 border-2'>
+        <div className="border-2 p-5">
             <h2>{date._id}</h2>
-            {
-                date.skills.map((skill: { skillId: any })=>(
-                    <SkillCard key={skill.skillId} skill={skill} />
-                ))
-            }
+            {date.skills.map((skill: { skillId: any }) => (
+                <SkillCard key={skill.skillId} skill={skill} />
+            ))}
         </div>
     );
 }

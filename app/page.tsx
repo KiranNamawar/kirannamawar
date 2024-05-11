@@ -9,7 +9,7 @@ export default async function Home() {
                 <div>
                     <p className={`font-quickSand`}>
                         Hey, I&apos;m{' '}
-                        <span className="text-4xl text-gray-500 font-thin tracking-widest">
+                        <span className="text-4xl font-thin tracking-widest text-gray-500">
                             KIRAN NAMAWAR
                         </span>
                     </p>

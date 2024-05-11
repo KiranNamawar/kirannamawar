@@ -7,7 +7,7 @@ export default async function SkillLayout({
     const skillNames = await getSkillNames();
     return (
         <html lang="en">
-            <body className='flex'>
+            <body className="flex">
                 <div>
                     <SkillList skillList={skillNames} />
                 </div>

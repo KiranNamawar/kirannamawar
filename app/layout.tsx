@@ -9,7 +9,6 @@ const quickSand = Quicksand({
     variable: '--font-quicksand',
 });
 
-
 export const metadata: Metadata = {
     title: 'Portfolio | Kiran Namawar',
     description: "Kiran Namawar's portfolio",

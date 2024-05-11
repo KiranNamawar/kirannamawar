@@ -2,7 +2,6 @@ import { client } from './util/connection';
 
 export async function getSkillBadges() {
     try {
-
         await client.connect();
 
         const collection = client.db('portfolio').collection('skills');
@@ -11,7 +10,6 @@ export async function getSkillBadges() {
             .toArray();
 
         return result;
-
     } catch (error) {
         console.error(error);
     }

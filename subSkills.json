@@ -532,7 +532,17 @@
         "skillId": "aws",
         "skillName": "AWS",
         "date": 202402,
-        "subSkills": ["AWS Basics", "IAM", "EC2", "S3", "RDS", "Lambda", "API Gateway", "Route 53", "VPC"],
+        "subSkills": [
+            "AWS Basics",
+            "IAM",
+            "EC2",
+            "S3",
+            "RDS",
+            "Lambda",
+            "API Gateway",
+            "Route 53",
+            "VPC"
+        ],
         "resources": [
             {
                 "name": "AWS Free Tier | Amazon Web Services",
@@ -545,12 +555,19 @@
         "skillId": "figma",
         "skillName": "Figma",
         "date": 202405,
-        "subSkills": ["Frames", "Constrains", "Auto Layout", "Variants", "Pages", "Plugins"],
+        "subSkills": [
+            "Frames",
+            "Constrains",
+            "Auto Layout",
+            "Variants",
+            "Pages",
+            "Plugins"
+        ],
         "resources": [
             {
                 "name": "Figma for Beginners tutorial",
                 "url": "https://help.figma.com/hc/en-us/sections/4405269443991-Figma-for-Beginners-tutorial-4-parts"
             }
-        ]   
+        ]
     }
 ]
