@@ -1,7 +1,6 @@
 import Link from "next/link";
 
-export function SkillList({skillList}) {
-    // console.log(skillList);
+export function SkillList({skillList}: {skillList: any}) {
     return (
         <>
             <h2>Skills</h2>

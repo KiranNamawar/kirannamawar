@@ -4,7 +4,6 @@ import { getSubSkills } from './data';
 
 export default async function Page() {
     const skills = await getSubSkills();
-    // console.log(skills);
     return (
         <>
             <h2>Skills</h2>

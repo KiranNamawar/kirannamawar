@@ -3,8 +3,7 @@ import { getSkillLogo } from './data';
 
 async function SkillCard({ skill }: { skill: any }) {
     const logo = await getSkillLogo(skill.skillName);
-    // console.log(logo);
-    // console.log(skill);
+
     return (
         <div className="m-5 flex border-2">
             {logo && <Image src={logo.logo} alt={logo._id.toString()} width={100} height={100} />}

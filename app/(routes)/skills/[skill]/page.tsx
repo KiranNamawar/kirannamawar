@@ -5,9 +5,7 @@ import { getSkill } from "./data";
 export default async function Page({ params }: { params: any }) {
     const skillId = params.skill
     const skill = await getSkill(skillId);
-    // console.log(skill);
     const subSkills = await getSubSkills(skillId);
-    // console.log(subSkills);
     return (
         <>
             {skill && (
