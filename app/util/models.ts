@@ -1,4 +1,3 @@
-
 // This file contains all the models used in the application
 
 // Skill Model
@@ -24,7 +23,6 @@ export class SubSkill {
         public resources: { name: string; url: string }[],
     ) {}
 }
-
 
 // SkillNameAndLogo Model
 export class SkillNameAndLogo {

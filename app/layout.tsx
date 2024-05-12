@@ -15,13 +15,11 @@ const quickSand = Quicksand({
     variable: '--font-quicksand',
 });
 
-
 // Exporting the Metadata for the Page
 export const metadata: Metadata = {
     title: 'Portfolio | Kiran Namawar',
     description: "Kiran Namawar's portfolio",
 };
-
 
 // Exporting the Root Layout Component
 export default function RootLayout({

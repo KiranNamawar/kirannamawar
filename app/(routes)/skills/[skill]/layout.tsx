@@ -2,9 +2,7 @@
 
 // Importing External Dependencies
 
-
 // Importing Internal Dependencies
-
 
 // Exporting the Skill Layout Component
 export default async function SkillLayout({

@@ -16,7 +16,6 @@ export const client = new MongoClient(process.env.DATABASE_URL ?? '');
 const skillsCollection = client.db('portfolio').collection('skills');
 const subSkillsCollection = client.db('portfolio').collection('subSkills');
 
-
 // Exporting the Functions for Data Fetching from the Database
 
 // Function to get the list of skills
@@ -34,12 +33,11 @@ export async function getSkillList() {
     }
 }
 
-
 // Function to get the list of recent skills
 export async function getRecentSkills() {
     try {
         await client.connect();
-        
+
         const result = (await subSkillsCollection
             .aggregate([
                 {
@@ -68,17 +66,17 @@ export async function getRecentSkills() {
     }
 }
 
-
 // Function to get a skill by ID
 export async function getSkill(skillId: any) {
     try {
         await client.connect();
-        return (await skillsCollection.findOne({ _id: skillId })) as unknown as Skill;
+        return (await skillsCollection.findOne({
+            _id: skillId,
+        })) as unknown as Skill;
     } catch (error) {
         console.log(error);
     }
 }
-
 
 // Function to get the logo of a skill
 export async function getSkillLogo(skillId: any) {
@@ -92,7 +90,6 @@ export async function getSkillLogo(skillId: any) {
         console.log(error);
     }
 }
-
 
 // Function to get the list of sub-skills
 export async function getSubSkills(skillId: string) {
