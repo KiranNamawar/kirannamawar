@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="145.67499"
+   height="149.14375"
+   viewBox="0 0 145.67499 149.14375"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter42"
+       x="-0.017534247"
+       y="-0.017100868"
+       width="1.0642922"
+       height="1.0627032">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.262745"
+         flood-color="rgb(139,184,129)"
+         id="feFlood41" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.000000"
+         id="feGaussianBlur41" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="4.000000"
+         dy="4.000000"
+         id="feOffset41" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite41" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite42" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-19.1625,-17.428125)">
+    <text
+       xml:space="preserve"
+       style="font-size:192px;font-family:'Microsoft New Tai Lue';-inkscape-font-specification:'Microsoft New Tai Lue';fill:#00ff66;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter42)"
+       x="4.875"
+       y="130.92188"
+       id="text1"><tspan
+         id="tspan1"
+         x="4.875"
+         y="130.92188"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva';fill:#00ff66;fill-opacity:1;stroke:none;stroke-opacity:1">K</tspan></text>
+  </g>
+</svg>

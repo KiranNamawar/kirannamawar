@@ -4,10 +4,22 @@ import Link from 'next/link';
 
 // Importing Internal Dependencies
 import { getSkillList, getSkillLogo } from './data';
-import { ShortSkill, SkillNameAndLogo } from './models';
+import { ShortSkill } from './models';
 import externalLinkIcon from '@/public/icon-external-link.png';
 
 // Exporting the Components for Rendering
+
+// Component to render Navigation Bar
+export function Navbar() {
+    return (
+        <nav className="absolute right-5 top-5 rounded-lg bg-gray-800 p-4 text-white">
+            <div className="flex gap-10">
+                <Link href="/">Home</Link>
+                <Link href="/skills">Skills</Link>
+            </div>
+        </nav>
+    );
+}
 
 // Component to render the Skill Badges on the Home Page
 export async function SkillBadges() {
@@ -32,7 +44,8 @@ export async function SkillBadges() {
 }
 
 // Component to render the Skill List on the Skill Pages for Navigation used in layout
-export function SkillList({ skillList }: { skillList: SkillNameAndLogo[] }) {
+export async function SkillList() {
+    const skillList = (await getSkillList()) || [];
     return (
         <>
             <h2>Skills</h2>
@@ -41,8 +54,14 @@ export function SkillList({ skillList }: { skillList: SkillNameAndLogo[] }) {
                     <Link
                         href={`/skills/${skill._id}`}
                         key={skill._id}
-                        className="m-5"
+                        className="mx-2 flex gap-2 rounded p-3 hover:bg-gray-700"
                     >
+                        <Image
+                            src={skill.logo}
+                            alt={skill.name}
+                            width={20}
+                            height={20}
+                        />
                         {skill.name}
                     </Link>
                 ))}
@@ -64,7 +83,11 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                 className="m-2 self-start"
             />
             <div className="">
-                <h4 className="ml-2 text-3xl font-bold">{skill.skillName}</h4>
+                <Link href={`/skills/${skill.skillId}`}>
+                    <h4 className="ml-2 text-3xl font-bold">
+                        {skill.skillName}
+                    </h4>
+                </Link>
                 <ul className="m-2 flex flex-wrap">
                     {skill.subSkills.map((subSkill) => (
                         <li
@@ -96,5 +119,18 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                 </ul>
             </div>
         </div>
+    );
+}
+
+// Component to render application icon
+export function AppIcon() {
+    return (
+        <Image
+            src="/icon.svg"
+            alt="Application Icon"
+            width={50}
+            height={50}
+            className="absolute left-5 top-5 cursor-pointer transition-transform duration-500 ease-in-out hover:scale-110"
+        />
     );
 }

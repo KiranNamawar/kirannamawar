@@ -3,16 +3,18 @@
 // Importing External Dependencies
 
 // Importing Internal Dependencies
+import { Navbar, SkillList } from "@/app/util/components";
 
 // Exporting the Skill Layout Component
 export default async function SkillLayout({
     children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: { children: React.ReactNode }) {
     return (
-        <html lang="en">
-            <body className="flex">
+        <section className="flex">
+                <nav>
+                    <SkillList />
+                </nav>
                 <div>{children}</div>
-            </body>
-        </html>
+        </section>
     );
 }
