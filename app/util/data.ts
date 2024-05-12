@@ -1,5 +1,7 @@
+// Importing External Dependencies
 import { MongoClient } from 'mongodb';
 
+// Importing Internal Dependencies
 import {
     Skill,
     SkillNameAndLogo,
@@ -7,14 +9,22 @@ import {
     RecentSubSkills,
 } from './models';
 
+// Instantiating the MongoDB Client
 export const client = new MongoClient(process.env.DATABASE_URL ?? '');
 
+// Defining the Collections
+const skillsCollection = client.db('portfolio').collection('skills');
+const subSkillsCollection = client.db('portfolio').collection('subSkills');
+
+
+// Exporting the Functions for Data Fetching from the Database
+
+// Function to get the list of skills
 export async function getSkillList() {
     try {
         await client.connect();
 
-        const collection = client.db('portfolio').collection('skills');
-        const result = (await collection
+        const result = (await skillsCollection
             .find({}, { projection: { logo: 1, name: 1 } })
             .toArray()) as unknown as SkillNameAndLogo[];
 
@@ -24,12 +34,12 @@ export async function getSkillList() {
     }
 }
 
+
+// Function to get the list of recent skills
 export async function getRecentSkills() {
     try {
         await client.connect();
-        const subSkillsCollection = client
-            .db('portfolio')
-            .collection('subSkills');
+        
         const result = (await subSkillsCollection
             .aggregate([
                 {
@@ -58,21 +68,23 @@ export async function getRecentSkills() {
     }
 }
 
+
+// Function to get a skill by ID
 export async function getSkill(skillId: any) {
     try {
         await client.connect();
-        const collection = client.db('portfolio').collection('skills');
-        return (await collection.findOne({ _id: skillId })) as unknown as Skill;
+        return (await skillsCollection.findOne({ _id: skillId })) as unknown as Skill;
     } catch (error) {
         console.log(error);
     }
 }
 
+
+// Function to get the logo of a skill
 export async function getSkillLogo(skillId: any) {
     try {
         await client.connect();
-        const collection = client.db('portfolio').collection('skills');
-        return (await collection.findOne(
+        return (await skillsCollection.findOne(
             { _id: skillId },
             { projection: { logo: 1, name: 1 } },
         )) as unknown as SkillNameAndLogo;
@@ -81,11 +93,12 @@ export async function getSkillLogo(skillId: any) {
     }
 }
 
+
+// Function to get the list of sub-skills
 export async function getSubSkills(skillId: string) {
     try {
         await client.connect();
-        const collection = client.db('portfolio').collection('subSkills');
-        return (await collection
+        return (await subSkillsCollection
             .aggregate([
                 {
                     $match: {

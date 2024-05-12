@@ -1,3 +1,6 @@
+// this file contains all the utility functions that are used in the application
+
+// this function is used to format the date in the form of month and year
 export function formatedDate(date: number) {
     const year = Math.floor(date / 100);
 

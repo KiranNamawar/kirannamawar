@@ -1,8 +1,15 @@
+// Importing External Dependencies
 import Image from 'next/image';
 import Link from 'next/link';
+
+// Importing Internal Dependencies
 import { getSkillList, getSkillLogo } from './data';
 import { ShortSkill, SkillNameAndLogo } from './models';
 
+
+// Exporting the Components for Rendering
+
+// Component to render the Skill Badges on the Home Page
 export async function SkillBadges() {
     const skillList = await getSkillList();
     return (
@@ -23,6 +30,8 @@ export async function SkillBadges() {
     );
 }
 
+
+// Component to render the Skill List on the Skill Pages for Navigation used in layout
 export function SkillList({ skillList }: { skillList: SkillNameAndLogo[] }) {
     return (
         <>
@@ -42,6 +51,8 @@ export function SkillList({ skillList }: { skillList: SkillNameAndLogo[] }) {
     );
 }
 
+
+// Component to render the Skill Card on the Skills Page
 export async function SkillCard({ skill }: { skill: ShortSkill }) {
     const logo = (await getSkillLogo(skill.skillId)) || { logo: '' };
     return (

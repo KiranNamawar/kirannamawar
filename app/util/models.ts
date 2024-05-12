@@ -1,3 +1,7 @@
+
+// This file contains all the models used in the application
+
+// Skill Model
 export class Skill {
     constructor(
         public _id: string,
@@ -9,6 +13,7 @@ export class Skill {
     ) {}
 }
 
+// SubSkill Model
 export class SubSkill {
     constructor(
         public _id: string,
@@ -20,6 +25,8 @@ export class SubSkill {
     ) {}
 }
 
+
+// SkillNameAndLogo Model
 export class SkillNameAndLogo {
     constructor(
         public _id: string,
@@ -28,6 +35,7 @@ export class SkillNameAndLogo {
     ) {}
 }
 
+// ShortSkill Model
 export interface ShortSkill {
     skillName: string;
     skillId: string;
@@ -35,6 +43,7 @@ export interface ShortSkill {
     resources: { name: string; url: string }[];
 }
 
+// RecentSkill Model
 export class RecentSkill {
     constructor(
         public _id: number,
@@ -42,6 +51,7 @@ export class RecentSkill {
     ) {}
 }
 
+// RecentSubSkills Model
 export class RecentSubSkills {
     constructor(
         public _id: string,

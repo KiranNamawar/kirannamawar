@@ -1,5 +1,13 @@
+// Desc: Home page of the application
+
+// Importing External Dependencies
+
+
+// Importing Internal Dependencies
 import { SkillBadges } from './util/components';
 
+
+// Exporting the Home Page
 export default async function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
