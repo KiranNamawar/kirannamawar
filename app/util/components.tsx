@@ -12,10 +12,17 @@ import externalLinkIcon from '@/public/icon-external-link.png';
 // Component to render Navigation Bar
 export function Navbar() {
     return (
-        <nav className="absolute right-5 top-5 rounded-lg bg-gray-800 p-4 text-white">
-            <div className="flex gap-10">
-                <Link href="/">Home</Link>
-                <Link href="/skills">Skills</Link>
+        <nav className="fixed top-0 left-0 right-0">
+            <Image
+                src="/icon.svg"
+                alt="Application Icon"
+                width={50}
+                height={50}
+                className="absolute left-5 top-5"
+            />
+            <div className="absolute right-5 top-5 flex gap-10 rounded-lg bg-gray-800 p-4 text-white">
+                <Link href="/" className='cursor-pointer '>Home</Link>
+                <Link href="/skills" className='cursor-pointer '>Skills</Link>
             </div>
         </nav>
     );
@@ -119,18 +126,5 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                 </ul>
             </div>
         </div>
-    );
-}
-
-// Component to render application icon
-export function AppIcon() {
-    return (
-        <Image
-            src="/icon.svg"
-            alt="Application Icon"
-            width={50}
-            height={50}
-            className="absolute left-5 top-5 cursor-pointer transition-transform duration-500 ease-in-out hover:scale-110"
-        />
     );
 }

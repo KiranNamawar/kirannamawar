@@ -6,7 +6,7 @@ import { Quicksand } from 'next/font/google';
 
 // Importing Internal Dependencies
 import './globals.css';
-import { AppIcon, Navbar } from './util/components';
+import { Navbar } from './util/components';
 
 // Instantiating the Quicksand Font
 const quickSand = Quicksand({
@@ -31,9 +31,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${quickSand.variable}`}>
-                <AppIcon />
                 <Navbar />
-                {children}
+                <div className='mt-20'>{children}</div>
             </body>
         </html>
     );
