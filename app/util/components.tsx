@@ -108,10 +108,7 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                 </div>
                 <ul className="m-2 flex flex-wrap">
                     {skill.subSkills.map((subSkill) => (
-                        <li
-                            key={subSkill}
-                            className="m-1 shrink-0 rounded p-1 "
-                        >
+                        <li key={subSkill} className="ml-2">
                             {subSkill}
                         </li>
                     ))}
@@ -141,29 +138,49 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
 }
 
 // Component to render the sub skills on the Skill Pages
-export async function SubSkills({
+export async function SubSkillsCard({
     subSkills,
 }: {
     subSkills: RecentSubSkills[];
 }) {
     return (
         <>
-            <div>
+            <div className="flex flex-col m-5">
                 {subSkills.map((subSkill) => (
-                    <div key={subSkill._id}>
-                        <h3>{formatedDate(subSkill.date)}</h3>
-                        <ul>
-                            {subSkill.subSkills.map((subSkillItem) => (
-                                <li key={subSkillItem}>{subSkillItem}</li>
-                            ))}
-                        </ul>
-                        <ul>
-                            {subSkill.resources.map((resource) => (
-                                <li key={resource.url}>
-                                    <a href={resource.url}>{resource.name}</a>
-                                </li>
-                            ))}
-                        </ul>
+                    <div key={subSkill._id} className="grid grid-cols-8 gap-4 m-5">
+                        <h3 className="col-span-1 text-xl font-light text-yellow-400">
+                            {formatedDate(subSkill.date)}
+                        </h3>
+                        <br />
+                        <div className="col-span-8">
+                            <ul className="flex flex-wrap gap-4">
+                                {subSkill.subSkills.map((subSkillItem) => (
+                                    <li key={subSkillItem}>{subSkillItem}</li>
+                                ))}
+                            </ul>
+                            <ul className="flex flex-wrap gap-2">
+                                {subSkill.resources.map((resource) => (
+                                    <li
+                                        key={resource.url}
+                                        className=" m-1 flex shrink-0 rounded p-1 text-blue-400 underline hover:bg-gray-700"
+                                    >
+                                        <a
+                                            key={resource.name}
+                                            href={resource.url}
+                                        >
+                                            {resource.name}
+                                        </a>
+                                        <Image
+                                            className="m-1"
+                                            width={18}
+                                            height={18}
+                                            src={externalLinkIcon}
+                                            alt=""
+                                        />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 ))}
             </div>
