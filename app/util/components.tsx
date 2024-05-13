@@ -4,15 +4,16 @@ import Link from 'next/link';
 
 // Importing Internal Dependencies
 import { getSkillList, getSkillLogo } from './data';
-import { ShortSkill } from './models';
+import { RecentSubSkills, ShortSkill } from './models';
 import externalLinkIcon from '@/public/icon-external-link.png';
+import { formatedDate } from './functions';
 
 // Exporting the Components for Rendering
 
 // Component to render Navigation Bar
 export function Navbar() {
     return (
-        <nav className="fixed top-0 left-0 right-0">
+        <nav className="fixed left-0 right-0 top-0">
             <Image
                 src="/icon.svg"
                 alt="Application Icon"
@@ -21,8 +22,12 @@ export function Navbar() {
                 className="absolute left-5 top-5"
             />
             <div className="absolute right-5 top-5 flex gap-10 rounded-lg bg-gray-800 p-4 text-white">
-                <Link href="/" className='cursor-pointer '>Home</Link>
-                <Link href="/skills" className='cursor-pointer '>Skills</Link>
+                <Link href="/" className="cursor-pointer ">
+                    Home
+                </Link>
+                <Link href="/skills" className="cursor-pointer ">
+                    Skills
+                </Link>
             </div>
         </nav>
     );
@@ -55,7 +60,7 @@ export async function SkillList() {
     const skillList = (await getSkillList()) || [];
     return (
         <>
-            <h2>Skills</h2>
+            {/* <h2>Skills</h2> */}
             <div className="flex flex-col">
                 {skillList.map((skill) => (
                     <Link
@@ -90,11 +95,17 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                 className="m-2 self-start"
             />
             <div className="">
-                <Link href={`/skills/${skill.skillId}`}>
+                <div className="flex">
                     <h4 className="ml-2 text-3xl font-bold">
                         {skill.skillName}
                     </h4>
-                </Link>
+                    <Link
+                        href={`/skills/${skill.skillId}`}
+                        className="ml-3.5 self-end text-yellow-500"
+                    >
+                        Read More
+                    </Link>
+                </div>
                 <ul className="m-2 flex flex-wrap">
                     {skill.subSkills.map((subSkill) => (
                         <li
@@ -109,7 +120,7 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                     {skill.resources.map((resource) => (
                         <li
                             key={resource.url}
-                            className="m-1 shrink-0 rounded p-1 text-blue-700 underline hover:bg-gray-700"
+                            className="m-1 shrink-0 rounded p-1 text-blue-400 underline hover:bg-gray-700"
                         >
                             <a href={resource.url} className="flex">
                                 {resource.name}
@@ -126,5 +137,36 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                 </ul>
             </div>
         </div>
+    );
+}
+
+// Component to render the sub skills on the Skill Pages
+export async function SubSkills({
+    subSkills,
+}: {
+    subSkills: RecentSubSkills[];
+}) {
+    return (
+        <>
+            <div>
+                {subSkills.map((subSkill) => (
+                    <div key={subSkill._id}>
+                        <h3>{formatedDate(subSkill.date)}</h3>
+                        <ul>
+                            {subSkill.subSkills.map((subSkillItem) => (
+                                <li key={subSkillItem}>{subSkillItem}</li>
+                            ))}
+                        </ul>
+                        <ul>
+                            {subSkill.resources.map((resource) => (
+                                <li key={resource.url}>
+                                    <a href={resource.url}>{resource.name}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 }

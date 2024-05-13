@@ -10,15 +10,15 @@ import { SkillBadges } from './util/components';
 export default async function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <section className=" flex w-screen flex-col items-center justify-around gap-10 p-10">
+            <section className=" flex w-screen flex-col items-center justify-around gap-10">
                 <div className="flex flex-col">
-                    <p className={`self-center font-quickSand`}>
+                    <p className={`self-center font-nunito`}>
                         Hey, I&apos;m{' '}
-                        <span className="text-4xl font-thin tracking-widest text-gray-500">
+                        <span className="text-4xl font-thin tracking-widest text-green-500">
                             KIRAN NAMAWAR
                         </span>
                     </p>
-                    <p className="font-quickSand text-7xl font-thin text-blue-300">
+                    <p className="font-nunito text-7xl font-thin text-blue-300">
                         Web Developer
                     </p>
                 </div>
@@ -26,9 +26,8 @@ export default async function Home() {
                 <div>
                     <Link
                         href="/skills"
-                        className="rounded bg-slate-700 p-3 text-blue-300 hover:bg-slate-500"
+                        className="rounded-xl bg-button-primary-default p-3 hover:bg-button-primary-hover"
                     >
-                        {' '}
                         View All Skills
                     </Link>
                 </div>

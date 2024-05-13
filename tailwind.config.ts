@@ -8,8 +8,16 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            colors: {
+                button: {
+                    primary: {
+                        default: '#004E97',
+                        hover: '#007BFF',
+                    },
+                },
+            },
             fontFamily: {
-                quickSand: ['var(--font-quicksand)'],
+                nunito: ['var(--font-nunito)', 'sans-serif'],
             },
         },
     },

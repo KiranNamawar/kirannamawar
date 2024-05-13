@@ -2,18 +2,17 @@
 
 // Importing External Dependencies
 import type { Metadata } from 'next';
-import { Quicksand } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 
 // Importing Internal Dependencies
 import './globals.css';
 import { Navbar } from './util/components';
 
 // Instantiating the Quicksand Font
-const quickSand = Quicksand({
+const nunito = Nunito({
     subsets: ['latin'],
     display: 'swap',
-    weight: ['300'],
-    variable: '--font-quicksand',
+    variable: '--font-nunito',
 });
 
 // Exporting the Metadata for the Page
@@ -30,7 +29,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${quickSand.variable}`}>
+            <body className={`${nunito.variable}`}>
                 <Navbar />
                 <div className='mt-20'>{children}</div>
             </body>

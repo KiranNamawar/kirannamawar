@@ -12,7 +12,7 @@ export default async function Page() {
     const recentSkills = await getRecentSkills();
     return (
         <>
-            <h2>Skills</h2>
+            {/* <h2>Skills</h2> */}
             <div>
                 {recentSkills?.map((recentSkill) => (
                     <div
