@@ -31,7 +31,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${nunito.variable}`}>
                 <Navbar />
-                <div className="mt-20">{children}</div>
+                <div className="mt-16">{children}</div>
             </body>
         </html>
     );

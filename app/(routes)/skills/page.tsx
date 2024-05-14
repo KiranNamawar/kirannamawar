@@ -19,7 +19,7 @@ export default async function Page() {
                         key={recentSkill._id}
                         className="m-2 grid  grid-cols-8 "
                     >
-                        <h3 className=" col-span-1 m-2 justify-self-center text-xl font-light">
+                        <h3 id={recentSkill._id.toString()} className="col-span-1 m-2 justify-self-center text-xl font-light">
                             {formatedDate(recentSkill._id)}
                         </h3>
                         <ul className="col-span-7">

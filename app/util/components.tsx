@@ -17,18 +17,25 @@ export function Navbar() {
             <Image
                 src="/icon.svg"
                 alt="Application Icon"
-                width={50}
-                height={50}
+                width={30}
+                height={30}
                 className="absolute left-5 top-5"
             />
-            <ul className="absolute right-5 top-5 flex gap-10 rounded-lg bg-gray-800 p-4 text-white">
+            <ul className="absolute right-5 top-5 flex rounded-xl bg-button-primary-default p-2 text-white">
                 <li>
-                    <Link href="/" className="cursor-pointer ">
+                    <Link
+                        href="/"
+                        className="cursor-pointer rounded-xl p-2 hover:bg-button-primary-hover"
+                    >
                         Home
                     </Link>
                 </li>
+                <div className="h-6 self-center border"></div>
                 <li>
-                    <Link href="/skills" className="cursor-pointer ">
+                    <Link
+                        href="/skills"
+                        className="cursor-pointer rounded-xl p-2 hover:bg-button-primary-hover"
+                    >
                         Skills
                     </Link>
                 </li>
@@ -41,7 +48,7 @@ export function Navbar() {
 export async function SkillBadges() {
     const skillList = await getSkillList();
     return (
-        <ul className="grid grid-cols-4 gap-6">
+        <ul className="grid grid-cols-4 gap-6 rounded-xl bg-blue-400 bg-opacity-25 p-5">
             {skillList?.map((skillItem) => (
                 <li key={skillItem._id}>
                     <Link href={`/skills/${skillItem._id}`}>
@@ -65,7 +72,7 @@ export async function SkillList() {
     return (
         <>
             {/* <h2>Skills</h2> */}
-            <ul className="flex flex-col">
+            <ul className="sticky bottom-5 top-16 flex flex-col">
                 {skillList.map((skill) => (
                     <li key={skill._id}>
                         <Link
@@ -106,15 +113,16 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                     </h4>
                     <Link
                         href={`/skills/${skill.skillId}`}
-                        className="ml-3.5 self-end text-yellow-500"
+                        className="ml-3.5 self-end text-yellow-500 hover:underline"
                     >
                         Read More
                     </Link>
                 </div>
                 <ul className="m-2 flex flex-wrap">
                     {skill.subSkills.map((subSkill) => (
-                        <li key={subSkill} className="ml-2">
+                        <li key={subSkill} className="ml-2 flex">
                             {subSkill}
+                            <div className="ml-2 h-4 self-center border border-green-500"></div>
                         </li>
                     ))}
                 </ul>
@@ -122,7 +130,7 @@ export async function SkillCard({ skill }: { skill: ShortSkill }) {
                     {skill.resources.map((resource) => (
                         <li
                             key={resource.url}
-                            className="m-1 shrink-0 rounded p-1 text-blue-400 underline hover:bg-gray-700"
+                            className="m-1 shrink-0 rounded p-1 text-blue-400 hover:underline"
                         >
                             <a href={resource.url} className="flex">
                                 {resource.name}
@@ -156,21 +164,26 @@ export async function SubSkillsCard({
                         key={subSkill._id}
                         className="m-5 grid grid-cols-8 gap-4"
                     >
-                        <h3 className="col-span-1 text-xl font-light text-yellow-400">
-                            {formatedDate(subSkill.date)}
+                        <h3 className="col-span-4 text-xl font-light text-yellow-400">
+                            <Link href={`/skills/#${subSkill.date.toString()}`}>
+                                {formatedDate(subSkill.date)}
+                            </Link>
                         </h3>
-                        <br />
+
                         <div className="col-span-8">
                             <ul className="flex flex-wrap gap-4">
                                 {subSkill.subSkills.map((subSkillItem) => (
-                                    <li key={subSkillItem}>{subSkillItem}</li>
+                                    <li key={subSkillItem} className="flex">
+                                        {subSkillItem}
+                                        <div className="ml-2 h-4 self-center border border-green-500"></div>{' '}
+                                    </li>
                                 ))}
                             </ul>
                             <ul className="flex flex-wrap gap-2">
                                 {subSkill.resources.map((resource) => (
                                     <li
                                         key={resource.url}
-                                        className=" m-1 flex shrink-0 rounded p-1 text-blue-400 underline hover:bg-gray-700"
+                                        className=" mt-2 flex shrink-0 rounded text-blue-400 hover:underline"
                                     >
                                         <a
                                             key={resource.name}

@@ -23,25 +23,16 @@ export default async function Page({ params }: { params: any }) {
                     width={50}
                     height={50}
                 />
-                <h2 className="ml-2 text-3xl font-bold">{skill.name}</h2>
+                <h2 className="ml-4 text-5xl font-bold">{skill.name}</h2>
             </div>
-            <div className="">
-                <h3>Tags</h3>
-                <ul className="m-2 flex flex-wrap">
-                    {skill.tags.map((tag) => (
-                        <li className="ml-2" key={tag}>
-                            {tag}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            
             <div>
                 <h3>Resources</h3>
                 <ul className=" m-2 flex flex-wrap">
                     {skill.resources.map((resource) => (
                         <li
                             key={resource.url}
-                            className="m-1 flex shrink-0 rounded p-1 text-blue-400 underline hover:bg-gray-700"
+                            className="m-1 flex shrink-0 rounded p-1 text-blue-400 hover:underline"
                         >
                             <a key={resource.name} href={resource.url}>
                                 {resource.name}
