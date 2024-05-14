@@ -21,14 +21,18 @@ export function Navbar() {
                 height={50}
                 className="absolute left-5 top-5"
             />
-            <div className="absolute right-5 top-5 flex gap-10 rounded-lg bg-gray-800 p-4 text-white">
-                <Link href="/" className="cursor-pointer ">
-                    Home
-                </Link>
-                <Link href="/skills" className="cursor-pointer ">
-                    Skills
-                </Link>
-            </div>
+            <ul className="absolute right-5 top-5 flex gap-10 rounded-lg bg-gray-800 p-4 text-white">
+                <li>
+                    <Link href="/" className="cursor-pointer ">
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/skills" className="cursor-pointer ">
+                        Skills
+                    </Link>
+                </li>
+            </ul>
         </nav>
     );
 }
@@ -37,9 +41,9 @@ export function Navbar() {
 export async function SkillBadges() {
     const skillList = await getSkillList();
     return (
-        <div className="grid grid-cols-4 gap-6">
+        <ul className="grid grid-cols-4 gap-6">
             {skillList?.map((skillItem) => (
-                <div key={skillItem._id}>
+                <li key={skillItem._id}>
                     <Link href={`/skills/${skillItem._id}`}>
                         <Image
                             src={skillItem.logo}
@@ -49,9 +53,9 @@ export async function SkillBadges() {
                             className="cursor-pointer transition-transform duration-500 ease-in-out hover:scale-110"
                         />
                     </Link>
-                </div>
+                </li>
             ))}
-        </div>
+        </ul>
     );
 }
 
@@ -61,23 +65,24 @@ export async function SkillList() {
     return (
         <>
             {/* <h2>Skills</h2> */}
-            <div className="flex flex-col">
+            <ul className="flex flex-col">
                 {skillList.map((skill) => (
-                    <Link
-                        href={`/skills/${skill._id}`}
-                        key={skill._id}
-                        className="mx-2 flex gap-2 rounded p-3 hover:bg-gray-700"
-                    >
-                        <Image
-                            src={skill.logo}
-                            alt={skill.name}
-                            width={20}
-                            height={20}
-                        />
-                        {skill.name}
-                    </Link>
+                    <li key={skill._id}>
+                        <Link
+                            href={`/skills/${skill._id}`}
+                            className="mx-2 flex gap-2 rounded p-3 hover:bg-gray-700"
+                        >
+                            <Image
+                                src={skill.logo}
+                                alt={skill.name}
+                                width={20}
+                                height={20}
+                            />
+                            {skill.name}
+                        </Link>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </>
     );
 }
@@ -86,7 +91,7 @@ export async function SkillList() {
 export async function SkillCard({ skill }: { skill: ShortSkill }) {
     const logo = (await getSkillLogo(skill.skillId)) || { logo: '' };
     return (
-        <div key={skill.skillId} className="m-2 flex">
+        <div className="m-2 flex">
             <Image
                 src={logo?.logo}
                 alt={skill.skillName}
@@ -145,9 +150,12 @@ export async function SubSkillsCard({
 }) {
     return (
         <>
-            <div className="flex flex-col m-5">
+            <ul className="m-5 flex flex-col">
                 {subSkills.map((subSkill) => (
-                    <div key={subSkill._id} className="grid grid-cols-8 gap-4 m-5">
+                    <li
+                        key={subSkill._id}
+                        className="m-5 grid grid-cols-8 gap-4"
+                    >
                         <h3 className="col-span-1 text-xl font-light text-yellow-400">
                             {formatedDate(subSkill.date)}
                         </h3>
@@ -181,9 +189,9 @@ export async function SubSkillsCard({
                                 ))}
                             </ul>
                         </div>
-                    </div>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </>
     );
 }

@@ -15,8 +15,8 @@ export default async function Page({ params }: { params: any }) {
     const skill = (await getSkill(skillId)) as Skill;
     const subSkills = (await getSubSkills(skillId)) || [];
     return (
-        <div className='ml-7'>
-            <div className="flex mb-5">
+        <div className="ml-7">
+            <div className="mb-5 flex">
                 <Image
                     src={skill.logo}
                     alt={skill.name}
@@ -27,13 +27,13 @@ export default async function Page({ params }: { params: any }) {
             </div>
             <div className="">
                 <h3>Tags</h3>
-                <div className="m-2 flex flex-wrap">
+                <ul className="m-2 flex flex-wrap">
                     {skill.tags.map((tag) => (
-                        <span className="ml-2" key={tag}>
+                        <li className="ml-2" key={tag}>
                             {tag}
-                        </span>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
             <div>
                 <h3>Resources</h3>

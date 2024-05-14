@@ -13,23 +13,25 @@ export default async function Page() {
     return (
         <>
             {/* <h2>Skills</h2> */}
-            <div>
+            <ul>
                 {recentSkills?.map((recentSkill) => (
-                    <div
+                    <li
                         key={recentSkill._id}
                         className="m-2 grid  grid-cols-8 "
                     >
                         <h3 className=" col-span-1 m-2 justify-self-center text-xl font-light">
                             {formatedDate(recentSkill._id)}
                         </h3>
-                        <div className="col-span-7">
+                        <ul className="col-span-7">
                             {recentSkill.skills.map((skill) => (
-                                <SkillCard key={skill.skillId} skill={skill} />
+                                <li key={skill.skillId}>
+                                    <SkillCard skill={skill} />
+                                </li>
                             ))}
-                        </div>
-                    </div>
+                        </ul>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </>
     );
 }

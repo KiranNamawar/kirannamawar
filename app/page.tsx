@@ -23,14 +23,12 @@ export default async function Home() {
                     </p>
                 </div>
                 <SkillBadges />
-                <div>
-                    <Link
-                        href="/skills"
-                        className="rounded-xl bg-button-primary-default p-3 hover:bg-button-primary-hover"
-                    >
-                        View All Skills
-                    </Link>
-                </div>
+                <Link
+                    href="/skills"
+                    className="rounded-xl bg-button-primary-default p-3 hover:bg-button-primary-hover"
+                >
+                    View All Skills
+                </Link>
             </section>
         </main>
     );
