@@ -29,9 +29,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${nunito.variable}`}>
+            <body className={`${nunito.variable} font-nunito`}>
                 <Navbar />
-                <div className="mt-16">{children}</div>
+                <div className="mt-20">{children}</div>
             </body>
         </html>
     );

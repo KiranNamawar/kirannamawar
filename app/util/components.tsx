@@ -25,16 +25,16 @@ export function Navbar() {
                 <li>
                     <Link
                         href="/"
-                        className="cursor-pointer rounded-xl p-2 hover:bg-button-primary-hover"
+                        className="cursor-pointer rounded-xl p-2 hover:underline"
                     >
                         Home
                     </Link>
                 </li>
-                <div className="h-6 self-center border"></div>
+                <div className="h-6 self-center border border-dashed"></div>
                 <li>
                     <Link
                         href="/skills"
-                        className="cursor-pointer rounded-xl p-2 hover:bg-button-primary-hover"
+                        className="cursor-pointer rounded-xl p-2 hover:underline"
                     >
                         Skills
                     </Link>
@@ -48,9 +48,9 @@ export function Navbar() {
 export async function SkillBadges() {
     const skillList = await getSkillList();
     return (
-        <ul className="grid grid-cols-4 gap-6 rounded-xl bg-blue-400 bg-opacity-25 p-5">
+        <ul className="grid grid-cols-4 gap-4 p-5 md:gap-8 ">
             {skillList?.map((skillItem) => (
-                <li key={skillItem._id}>
+                <li key={skillItem._id} className="flex justify-center">
                     <Link href={`/skills/${skillItem._id}`}>
                         <Image
                             src={skillItem.logo}
@@ -71,25 +71,24 @@ export async function SkillList() {
     const skillList = (await getSkillList()) || [];
     return (
         <>
-            {/* <h2>Skills</h2> */}
-            <ul className="sticky bottom-5 top-16 flex flex-col">
-                {skillList.map((skill) => (
-                    <li key={skill._id}>
-                        <Link
-                            href={`/skills/${skill._id}`}
-                            className="mx-2 flex gap-2 rounded p-3 hover:bg-gray-700"
-                        >
-                            <Image
-                                src={skill.logo}
-                                alt={skill.name}
-                                width={20}
-                                height={20}
-                            />
-                            {skill.name}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+            <div className="hidden md:block ">
+                <ul className="">
+                    {skillList.map((skill) => (
+                        <li key={skill._id}>
+                            <Link href={`/skills/${skill._id}`} className="flex gap-2 items-center">
+                                <Image
+                                    src={skill.logo}
+                                    alt={skill.name}
+                                    width={20}
+                                    height={20}
+                                />
+                                {skill.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className="md:hidden"></div>
         </>
     );
 }
@@ -98,44 +97,48 @@ export async function SkillList() {
 export async function SkillCard({ skill }: { skill: ShortSkill }) {
     const logo = (await getSkillLogo(skill.skillId)) || { logo: '' };
     return (
-        <div className="m-2 flex">
-            <Image
-                src={logo?.logo}
-                alt={skill.skillName}
-                width={25}
-                height={25}
-                className="m-2 self-start"
-            />
-            <div className="">
-                <div className="flex">
-                    <h4 className="ml-2 text-3xl font-bold">
-                        {skill.skillName}
+        <div className="">
+            <div className="my-4 flex flex-wrap items-center justify-between md:mb-8">
+                <div className="flex gap-3 md:gap-6">
+                    <Image
+                        src={logo?.logo}
+                        alt={skill.skillName}
+                        width={25}
+                        height={25}
+                        className=""
+                    />
+                    <h4 className=" text-3xl font-bold">
+                        <Link href={`/skills/${skill.skillId}`}>
+                            {skill.skillName}
+                        </Link>
                     </h4>
-                    <Link
-                        href={`/skills/${skill.skillId}`}
-                        className="ml-3.5 self-end text-yellow-500 hover:underline"
-                    >
-                        Read More
-                    </Link>
                 </div>
-                <ul className="m-2 flex flex-wrap">
+                <Link
+                    href={`/skills/${skill.skillId}`}
+                    className=" mr-10 text-yellow-500 hover:underline"
+                >
+                    Read More
+                </Link>
+            </div>
+            <div className="">
+                <ul className="my-4 md:my-8 flex flex-wrap gap-x-4 md:gap-x-8 md:gap-y-4 gap-y-2">
                     {skill.subSkills.map((subSkill) => (
-                        <li key={subSkill} className="ml-2 flex">
+                        <li key={subSkill} className="border-b border-dotted">
                             {subSkill}
-                            <div className="ml-2 h-4 self-center border border-green-500"></div>
+                            {/* <div className="border border-dotted"></div> */}
                         </li>
                     ))}
                 </ul>
-                <ul className="m-2 flex flex-wrap">
+                <ul className="my-4 md:my-8 flex flex-wrap gap-x-4 md:gap-x-8 md:gap-y-4 gap-y-2">
                     {skill.resources.map((resource) => (
                         <li
                             key={resource.url}
-                            className="m-1 shrink-0 rounded p-1 text-blue-400 hover:underline"
+                            className=" text-blue-400 hover:underline"
                         >
                             <a href={resource.url} className="flex">
                                 {resource.name}
                                 <Image
-                                    className="m-1"
+                                    className="m-1 hidden md:inline-block"
                                     width={18}
                                     height={18}
                                     src={externalLinkIcon}
@@ -158,32 +161,34 @@ export async function SubSkillsCard({
 }) {
     return (
         <>
-            <ul className="m-5 flex flex-col">
+            <ul className="">
                 {subSkills.map((subSkill) => (
                     <li
                         key={subSkill._id}
-                        className="m-5 grid grid-cols-8 gap-4"
+                        className="relative my-10 rounded-xl border p-4 md:my-20"
                     >
-                        <h3 className="col-span-4 text-xl font-light text-yellow-400">
+                        <h3 className="absolute -top-5 rounded-lg bg-blue-900 p-2 text-xl font-light text-white">
                             <Link href={`/skills/#${subSkill.date.toString()}`}>
                                 {formatedDate(subSkill.date)}
                             </Link>
                         </h3>
 
-                        <div className="col-span-8">
-                            <ul className="flex flex-wrap gap-4">
+                        <div className="mt-5 md:m-10">
+                            <ul className="flex flex-wrap gap-x-4 md:gap-x-8">
                                 {subSkill.subSkills.map((subSkillItem) => (
-                                    <li key={subSkillItem} className="flex">
+                                    <li
+                                        key={subSkillItem}
+                                        className="my-2 w-fit border-b border-dotted md:my-4"
+                                    >
                                         {subSkillItem}
-                                        <div className="ml-2 h-4 self-center border border-green-500"></div>{' '}
                                     </li>
                                 ))}
                             </ul>
-                            <ul className="flex flex-wrap gap-2">
+                            <ul className="my-6 flex flex-wrap gap-2 md:my-12">
                                 {subSkill.resources.map((resource) => (
                                     <li
                                         key={resource.url}
-                                        className=" mt-2 flex shrink-0 rounded text-blue-400 hover:underline"
+                                        className="flex flex-wrap rounded text-blue-400 hover:underline"
                                     >
                                         <a
                                             key={resource.name}
@@ -192,7 +197,7 @@ export async function SubSkillsCard({
                                             {resource.name}
                                         </a>
                                         <Image
-                                            className="m-1"
+                                            className="m-1 hidden md:inline-block"
                                             width={18}
                                             height={18}
                                             src={externalLinkIcon}

@@ -12,10 +12,10 @@ export default async function SkillLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section className="flex">
-            <nav>
-                <SkillList />
-            </nav>
+        <section className="">
+            {/* <nav> */}
+                {/* <SkillList /> */}
+            {/* </nav> */}
             <div>{children}</div>
         </section>
     );
