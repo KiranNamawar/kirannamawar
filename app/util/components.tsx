@@ -48,7 +48,7 @@ export function Navbar() {
 export async function SkillBadges() {
     const skillList = await getSkillList();
     return (
-        <ul className="grid grid-cols-4 gap-4 p-5 md:gap-8 ">
+        <ul className="grid grid-cols-4 gap-4 p-5 md:gap-10 ">
             {skillList?.map((skillItem) => (
                 <li key={skillItem._id} className="flex justify-center">
                     <Link href={`/skills/${skillItem._id}`}>
