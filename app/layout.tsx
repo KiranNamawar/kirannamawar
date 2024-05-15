@@ -3,6 +3,7 @@
 // Importing External Dependencies
 import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // Importing Internal Dependencies
 import './globals.css';
@@ -33,6 +34,7 @@ export default function RootLayout({
                 <Navbar />
                 <div className="mt-20">{children}</div>
             </body>
+            <GoogleAnalytics gaId="G-VHDBP2J77K" />
         </html>
     );
 }
