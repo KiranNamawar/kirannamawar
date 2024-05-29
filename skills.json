@@ -222,5 +222,18 @@
                 "url": "https://docs.aws.amazon.com/"
             }
         ]
+    },
+    {
+        "_id": "csharp",
+        "name": "C#",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+        "category": "Programming Language",
+        "tags": ["csharp", "backend"],
+        "resources": [
+            {
+                "name": "C# Guide | Microsoft Docs",
+                "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+            }
+        ]
     }
 ]

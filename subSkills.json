@@ -569,5 +569,24 @@
                 "url": "https://help.figma.com/hc/en-us/sections/4405269443991-Figma-for-Beginners-tutorial-4-parts"
             }
         ]
+    },
+    {
+        "_id": "csharp-202405",
+        "skillId": "csharp",
+        "skillName": "C#",
+        "date": 202405,
+        "subSkills":[
+            "C# Basics",
+            "Value Types and Reference Types",
+            "C# OOP",
+            "C# Collections",
+            "C# Exception Handling"
+        ],
+        "resources": [
+            {
+                "name": "C# Fundamentals | PluralSight",
+                "url": "https://www.pluralsight.com/courses/csharp-fundamentals-dev"
+            }
+        ]
     }
 ]

@@ -31,16 +31,18 @@ export default async function Home() {
                         </Link>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center md:border-t'>
-                    <h3 className='text-2xl font-thin text-blue-300 md:text-4xl mt-10'>About Me</h3>
-                    <p className="max-w-screen-sm p-2 text-center mt-5 md:mt-10 text-lg">
+                <div className="flex flex-col items-center justify-center md:border-t">
+                    <h3 className="mt-10 text-2xl font-thin text-blue-300 md:text-4xl">
+                        About Me
+                    </h3>
+                    <p className="mt-5 max-w-screen-sm p-2 text-center text-lg md:mt-10">
                         I&apos;m a passionate web developer with 1 years of
                         experience. I love crafting user-friendly interfaces and
                         bringing ideas to life through code. I&apos;m proficient
                         in HTML, CSS, Tailwind CSS, JavaScript, TypeScript,
                         React, Next.js, and MongoDB.
                     </p>
-                    <div className="flex gap-4 m-10">
+                    <div className="m-10 flex gap-4">
                         <Link href="https://www.linkedin.com/in/kirannamawar/">
                             <Image
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
@@ -58,6 +60,13 @@ export default async function Home() {
                                 height="50"
                                 className="hover:scale-110"
                             />
+                        </Link>
+                    </div>
+                    <div>
+                        <Link href="/contact">
+                            <button className="bg-button-primary-default hover:bg-button-primary-hover p-2 rounded-xl mb-10">
+                                Let&apos;s Connect
+                            </button>
                         </Link>
                     </div>
                 </div>
