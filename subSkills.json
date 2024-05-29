@@ -585,7 +585,27 @@
         "resources": [
             {
                 "name": "C# Fundamentals | PluralSight",
-                "url": "https://www.pluralsight.com/courses/csharp-fundamentals-dev"
+                "url": "https://app.pluralsight.com/library/courses/c-sharp-10-fundamentals"
+            }
+        ]
+    },
+    {
+        "_id": "expressjs-202405",
+        "skillId": "expressjs",
+        "skillName": "Express.js",
+        "date": 202405,
+        "subSkills": [
+            "Express.js Basics",
+            "Route Methods",
+            "Route Paths",
+            "Route Parameters",
+            "Route Handlers",
+            "express.Router"
+        ],
+        "resources": [
+            {
+                "name": "Routing | Express.js Guide",
+                "url": "https://expressjs.com/en/guide/routing.html"
             }
         ]
     }
