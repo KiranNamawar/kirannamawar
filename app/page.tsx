@@ -43,7 +43,7 @@ export default async function Home() {
                         React, Next.js, and MongoDB.
                     </p>
                     <div className="m-10 flex gap-4">
-                        <Link href="https://www.linkedin.com/in/kirannamawar/">
+                        <Link href="https://www.linkedin.com/in/kirannamawardev/">
                             <Image
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
                                 alt="linkedin"
