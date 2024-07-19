@@ -237,15 +237,15 @@
         ]
     },
     {
-        "_id": "expressjs",
-        "name": "Express.js",
-        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
-        "category": "Backend",
-        "tags": ["express", "nodejs", "javascript", "web"],
+        "_id": "c",
+        "name": "C",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+        "category": "Programming Language",
+        "tags": ["c"],
         "resources": [
             {
-                "name": "Express Docs",
-                "url": "https://expressjs.com/en/5x/api.html"
+                "name": "C Language Reference",
+                "url": "https://en.cppreference.com/w/c/language"
             }
         ]
     }
