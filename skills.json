@@ -235,5 +235,18 @@
                 "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
             }
         ]
+    },
+    {
+        "_id": "c",
+        "name": "C",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+        "category": "Programming Language",
+        "tags": ["c"],
+        "resources": [
+            {
+                "name": "C Language Reference",
+                "url": "https://en.cppreference.com/w/c/language"
+            }
+        ]
     }
 ]

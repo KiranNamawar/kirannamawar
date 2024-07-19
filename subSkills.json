@@ -588,5 +588,39 @@
                 "url": "https://www.pluralsight.com/courses/csharp-fundamentals-dev"
             }
         ]
+    },
+    {
+        "_id": "c-202407",
+        "skillId": "c",
+        "skillName": "C",
+        "date": 202407,
+        "subSkills": [
+            "C Basics",
+            "C Data Types",
+            "C Operators",
+            "C Control Statements",
+            "C Functions",
+            "C Arrays",
+            "C Pointers",
+            "C Strings",
+            "C Structures",
+            "C File Handling",
+            "Stack",
+            "Queue",
+            "Linked List",
+            "Tree",
+            "Hashtable",
+            "Tries"
+        ],
+        "resources": [
+            {
+                "name": "CS50's Introduction to Computer Science",
+                "url": "https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
+            },
+            {
+                "name": "C Development Fundamentls | PluralSight",
+                "url": "https://www.pluralsight.com/paths/c-development-fundamentals"
+            }
+        ]
     }
 ]
